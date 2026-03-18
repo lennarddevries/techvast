@@ -2,6 +2,9 @@ name: Quality Checks
 
 on:
   workflow_call:
+    secrets:
+      PUBLIC_TURNSTILE_SITEKEY:
+        required: false
 
 jobs:
   check:
@@ -30,3 +33,5 @@ jobs:
 
       - name: Build
         run: bun run build
+        env:
+          PUBLIC_TURNSTILE_SITEKEY: ${{ secrets.PUBLIC_TURNSTILE_SITEKEY }}
