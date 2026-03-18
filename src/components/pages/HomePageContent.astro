@@ -74,55 +74,53 @@ const featuredServices = allServices
         class="animate-line-grow mt-10 flex items-center gap-0"
         style="animation-delay: 0.35s"
       >
-        <span class="h-[3px] w-14 shrink-0 bg-accent"></span>
+        <span class="h-px w-14 shrink-0 bg-accent"></span>
         <span class="h-px flex-1 bg-foreground/12"></span>
       </div>
 
-      <!-- Subheadline + CTAs side by side on desktop -->
-      <div class="mt-10 grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
-        <p
-          class="animate-reveal-up max-w-xl text-lg leading-relaxed text-muted-foreground"
-          style="animation-delay: 0.45s"
-        >
-          {t.hero.subheadline}
-        </p>
+      <!-- Subheadline -->
+      <p
+        class="animate-reveal-up mt-10 max-w-xl text-lg leading-relaxed text-muted-foreground"
+        style="animation-delay: 0.45s"
+      >
+        {t.hero.subheadline}
+      </p>
 
-        <!-- CTAs -->
-        <div
-          class="animate-reveal-up flex flex-wrap items-center gap-3"
-          style="animation-delay: 0.55s"
+      <!-- CTAs -->
+      <div
+        class="animate-reveal-up mt-8 flex flex-wrap items-center gap-3"
+        style="animation-delay: 0.55s"
+      >
+        <a
+          href={locale === "nl" ? "/services" : `/${locale}/services`}
+          class="inline-flex h-12 items-center gap-2.5 bg-foreground px-7 text-xs font-bold tracking-wider text-primary-foreground uppercase transition-colors hover:bg-foreground/85 active:scale-[0.98]"
         >
-          <a
-            href={locale === "nl" ? "/services" : `/${locale}/services`}
-            class="inline-flex h-12 items-center gap-2.5 bg-foreground px-7 text-xs font-bold tracking-wider text-primary-foreground uppercase transition-colors hover:bg-foreground/85 active:scale-[0.98]"
+          {t.hero.ctaPrimary}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
           >
-            {t.hero.ctaPrimary}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+        {
+          isAvailable && (
+            <a
+              href={locale === "nl" ? "/contact" : `/${locale}/contact`}
+              class="inline-flex h-12 items-center border-2 border-foreground/25 px-7 text-xs font-bold tracking-wider text-foreground uppercase transition-all hover:border-foreground active:scale-[0.98]"
             >
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
-          {
-            isAvailable && (
-              <a
-                href={locale === "nl" ? "/contact" : `/${locale}/contact`}
-                class="inline-flex h-12 items-center border-2 border-foreground/25 px-7 text-xs font-bold tracking-wider text-foreground uppercase transition-all hover:border-foreground active:scale-[0.98]"
-              >
-                {t.hero.ctaSecondary}
-              </a>
-            )
-          }
-        </div>
+              {t.hero.ctaSecondary}
+            </a>
+          )
+        }
       </div>
     </div>
   </section>
@@ -267,9 +265,10 @@ const featuredServices = allServices
                   i < t.whyMe.points.length - 1 ? "border-b border-border" : "",
                 ]}
               >
-                <span class="mt-0.5 shrink-0 font-heading text-2xl font-bold text-accent/30">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
+                <span
+                  class="mt-2.5 h-px w-4 shrink-0 bg-accent"
+                  aria-hidden="true"
+                />
                 <div>
                   <h3 class="mb-2 font-heading text-lg font-bold text-foreground">
                     {point.title}

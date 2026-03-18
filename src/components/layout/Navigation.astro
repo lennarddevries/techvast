@@ -41,17 +41,6 @@ const navLinks = [
     href: locale === "nl" ? "/about" : `/${locale}/about`,
     current: currentPath.includes("/about"),
   },
-  {
-    label: t.nav.contact,
-    href: isAvailable
-      ? locale === "nl"
-        ? "/contact"
-        : `/${locale}/contact`
-      : null,
-    current: currentPath.includes("/contact"),
-    disabled: !isAvailable,
-    hint: !isAvailable ? t.nav.unavailableHint : undefined,
-  },
 ]
 ---
 
@@ -256,8 +245,40 @@ const navLinks = [
       }
     </ul>
 
+    <!-- Mobile contact CTA (replaces desktop CTA button) -->
+    {
+      isAvailable ? (
+        <div class="px-6 pb-2">
+          <a
+            href={locale === "nl" ? "/contact" : `/${locale}/contact`}
+            class="flex h-10 w-full items-center justify-center gap-2 bg-accent text-xs font-bold tracking-wider text-accent-foreground uppercase transition-colors hover:bg-accent/85"
+          >
+            {t.nav.contact}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      ) : (
+        <div class="mx-6 cursor-not-allowed border-b border-border/40 px-0 py-3 text-xs font-semibold tracking-wider text-muted-foreground/40 uppercase">
+          {t.nav.contact}
+        </div>
+      )
+    }
+
     <!-- Mobile locale switcher -->
-    <div class="flex items-center gap-4 px-6 pt-2 pb-5">
+    <div class="flex items-center gap-4 px-6 pt-3 pb-5">
       {
         localeSwitcher.map((item) =>
           item.current ? (
