@@ -1,3 +1,15 @@
+# [1.0.0-beta.2](https://github.com/lennarddevries/techvast/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2026-03-18)
+
+
+### Bug Fixes
+
+* ensure worker-configuration.d.ts is formatted after generation ([5e1de67](https://github.com/lennarddevries/techvast/commit/5e1de67f62e05680dbc935a5d706ae33c6b26e26))
+
+
+### Features
+
+* add formatting and linting checks in pre-commit and ci ([4d51a50](https://github.com/lennarddevries/techvast/commit/4d51a500726b77ff0db8409e845b3fd0267e23fb))
+
 # 1.0.0-beta.1 (2026-03-18)
 
 
