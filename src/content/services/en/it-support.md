@@ -8,7 +8,7 @@ order: 15
 targetAudience: "All businesses"
 longDescription: "Problems with email, a slow computer or forgotten passwords? Our friendly helpdesk solves problems quickly, so your team can continue immediately."
 serviceId: "it-support"
-price: "From € 55 / hour"
+price: "From € 00 / hour"
 ---
 
 ### What it is

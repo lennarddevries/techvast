@@ -8,7 +8,7 @@ order: 4
 targetAudience: "Unternehmen mit sich wiederholenden Aufgaben"
 longDescription: "Spare Zeit und reduziere menschliche Fehler durch die Automatisierung wiederkehrender Aufgaben. Wir verknüpfen Systeme und optimieren deine Arbeitsprozesse."
 serviceId: "workflow-automation"
-price: "Ab € 65 / Stunde"
+price: "Ab € 00 / Stunde"
 ---
 
 ### Was es ist

@@ -8,7 +8,7 @@ order: 4
 targetAudience: "Bedrijven met repetitieve taken"
 longDescription: "Bespaar tijd en verminder menselijke fouten door repetitieve taken te automatiseren. We koppelen systemen aan elkaar en stroomlijnen je werkprocessen."
 serviceId: "workflow-automation"
-price: "Vanaf € 65 / uur"
+price: "Vanaf € 00 / uur"
 ---
 
 ### Wat het is

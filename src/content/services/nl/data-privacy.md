@@ -8,7 +8,7 @@ order: 13
 targetAudience: "Alle ondernemingen"
 longDescription: "Zorg dat je bedrijf voldoet aan de privacywetgeving. Wij bieden praktische ondersteuning bij het inrichten van een veilige data-omgeving en AVG compliance."
 serviceId: "data-privacy"
-price: "Vanaf € 65 / uur"
+price: "Vanaf € 00 / uur"
 ---
 
 ### Wat het is

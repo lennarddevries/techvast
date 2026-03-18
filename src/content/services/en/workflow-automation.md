@@ -8,7 +8,7 @@ order: 4
 targetAudience: "Companies with repetitive tasks"
 longDescription: "Save time and reduce human error by automating repetitive tasks. We connect systems and streamline your work processes."
 serviceId: "workflow-automation"
-price: "From € 65 / hour"
+price: "From € 00 / hour"
 ---
 
 ### What it is

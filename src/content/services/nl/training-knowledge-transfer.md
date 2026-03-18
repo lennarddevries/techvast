@@ -8,7 +8,7 @@ order: 16
 targetAudience: "Teams en medewerkers"
 longDescription: "Een nieuwe applicatie is pas succesvol als mensen ermee kunnen werken. Wij geven praktische trainingen om de digitale vaardigheden van je team te vergroten."
 serviceId: "training-knowledge-transfer"
-price: "Vanaf € 250 / sessie"
+price: "Vanaf € 000 / sessie"
 ---
 
 ### Wat het is

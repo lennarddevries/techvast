@@ -8,7 +8,7 @@ order: 10
 targetAudience: "Wachsende Unternehmen"
 longDescription: "Stelle sicher, dass neue Mitarbeiter vom ersten Tag an produktiv sind. Wir kümmern uns um die Hardware, Konten, Software und ein reibungsloses IT-Onboarding."
 serviceId: "workspace-onboarding"
-price: "Ab € 55 / Arbeitsplatz"
+price: "Ab € 00 / Arbeitsplatz"
 ---
 
 ### Was es ist

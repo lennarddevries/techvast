@@ -8,7 +8,7 @@ order: 2
 targetAudience: "Businesses wanting to grow online"
 longDescription: "From a completely new website to redesigning your current site. We build lightning-fast, user-friendly websites with a focus on conversion and SEO."
 serviceId: "website-development"
-price: "From € 850"
+price: "From € 000"
 ---
 
 ### What it is

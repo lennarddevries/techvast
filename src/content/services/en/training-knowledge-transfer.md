@@ -8,7 +8,7 @@ order: 16
 targetAudience: "Teams and employees"
 longDescription: "A new application is only successful if people can work with it. We provide practical training to increase the digital skills of your team."
 serviceId: "training-knowledge-transfer"
-price: "From € 250 / session"
+price: "From € 000 / session"
 ---
 
 ### What it is

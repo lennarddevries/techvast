@@ -8,7 +8,7 @@ order: 8
 targetAudience: "Mittlere bis große Organisationen"
 longDescription: "Wir sorgen dafür, dass deine Geschäftsanwendungen weiterhin das tun, was sie tun sollen. Sei es die Behebung von Störungen, die Durchführung von Updates oder die Unterstützung der Benutzer."
 serviceId: "functional-application-management"
-price: "Ab € 65 / Stunde"
+price: "Ab € 00 / Stunde"
 ---
 
 ### Was es ist

@@ -8,7 +8,7 @@ order: 7
 targetAudience: "Tech-gedreven organisaties"
 longDescription: "Geen handmatig overtypen meer. Wij bouwen veilige en robuuste API koppelingen tussen je webshop, boekhouding, CRM en andere bedrijfssoftware."
 serviceId: "api-integrations"
-price: "Vanaf € 75 / uur"
+price: "Vanaf € 00 / uur"
 ---
 
 ### Wat het is

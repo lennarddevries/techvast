@@ -8,7 +8,7 @@ order: 14
 targetAudience: "Moderne organisaties"
 longDescription: "Het aanbod van cloud software is enorm. Wij adviseren onafhankelijk over de beste SaaS oplossingen voor jouw specifieke bedrijfsbehoeftes en helpen bij de migratie."
 serviceId: "cloud-saas-advice"
-price: "Vanaf € 65 / uur"
+price: "Vanaf € 00 / uur"
 ---
 
 ### Wat het is

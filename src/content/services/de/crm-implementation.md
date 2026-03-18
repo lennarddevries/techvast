@@ -8,7 +8,7 @@ order: 6
 targetAudience: "Vertriebs- und Marketingteams"
 longDescription: "Ein gutes CRM-System ist der Motor deines Unternehmens. Wir beraten, implementieren und verwalten CRM-Lösungen, die perfekt zu deinen Vertriebs- und Serviceprozessen passen."
 serviceId: "crm-implementation"
-price: "Ab € 65 / Stunde"
+price: "Ab € 00 / Stunde"
 ---
 
 ### Was es ist
