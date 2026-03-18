@@ -1,0 +1,102 @@
+---
+import { getCollection } from "astro:content"
+import Layout from "@/layouts/main.astro"
+import { ContactForm } from "@/components/ContactForm"
+import { useTranslations, type Locale } from "@/i18n/utils"
+
+const locale = (Astro.currentLocale ?? "nl") as Locale
+const t = useTranslations(locale)
+const c = t.contact
+
+const [availData] = await getCollection("availability")
+const isAvailable = availData?.data?.available ?? true
+---
+
+<Layout seoKey="contact" noindex={!isAvailable}>
+  <section class="px-6 pt-20 pb-24">
+    <div class="mx-auto max-w-6xl">
+      <p
+        class="mb-3 text-xs font-medium tracking-widest text-muted-foreground uppercase"
+      >
+        {c.eyebrow}
+      </p>
+      <h1
+        class="mb-12 font-heading text-5xl font-semibold text-foreground md:text-6xl"
+      >
+        {c.heading}
+      </h1>
+
+      {
+        isAvailable ? (
+          <div class="grid gap-16 lg:grid-cols-5">
+            <div class="lg:col-span-3">
+              <p class="mb-8 leading-relaxed text-muted-foreground">
+                {c.subheading}
+              </p>
+              <ContactForm client:load t={c.form} locale={locale} />
+            </div>
+
+            <aside class="flex flex-col gap-6 lg:col-span-2">
+              <div class="rounded-xl border border-border bg-card p-6">
+                <h2 class="mb-4 font-heading text-lg font-semibold text-foreground">
+                  hello@techvast.nl
+                </h2>
+                <p class="text-sm leading-relaxed text-muted-foreground">
+                  Stuur ook gerust een directe e-mail. Ik reageer binnen één
+                  werkdag.
+                </p>
+              </div>
+
+              <div class="rounded-xl border border-border bg-card p-6">
+                <h2 class="mb-3 font-heading text-lg font-semibold text-foreground">
+                  LinkedIn
+                </h2>
+                <a
+                  href="https://linkedin.com/in/techvast"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-sm text-accent hover:underline"
+                >
+                  linkedin.com/in/techvast
+                </a>
+              </div>
+            </aside>
+          </div>
+        ) : (
+          <div class="max-w-xl rounded-xl border border-border bg-card p-8">
+            <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-muted">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.75"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="text-muted-foreground"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="m4.9 4.9 14.2 14.2" />
+              </svg>
+            </div>
+            <h2 class="mb-2 font-heading text-2xl font-semibold text-foreground">
+              {c.unavailableHeading}
+            </h2>
+            <p class="text-sm leading-relaxed text-muted-foreground">
+              {c.unavailableText}
+            </p>
+            <a
+              href="mailto:hello@techvast.nl"
+              class="mt-6 inline-flex h-9 items-center rounded-lg border border-border px-4 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
+            >
+              hello@techvast.nl
+            </a>
+          </div>
+        )
+      }
+    </div>
+  </section>
+</Layout>

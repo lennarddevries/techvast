@@ -1,0 +1,158 @@
+{
+  "locale": "en",
+  "localeName": "English",
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "unavailableHint": "Currently unavailable for new projects"
+  },
+  "availability": {
+    "available": "Available",
+    "unavailable": "Unavailable"
+  },
+  "hero": {
+    "eyebrow": "Freelance Virtual Assistant",
+    "headline": "More time for\nwhat truly matters",
+    "subheadline": "I support IT companies and startups with administration, project management and customer service — so you can focus on growth.",
+    "ctaPrimary": "View my services",
+    "ctaSecondary": "Get in touch",
+    "scrollHint": "Discover more"
+  },
+  "services": {
+    "heading": "My services",
+    "subheading": "Professional support tailored to your needs",
+    "viewAll": "View all services",
+    "learnMore": "Learn more",
+    "fromPrice": "From",
+    "featuredHeading": "Popular services",
+    "featuredSubheading": "The most requested services by my clients"
+  },
+  "process": {
+    "heading": "How does it work?",
+    "subheading": "From introduction to collaboration — fast and without hassle",
+    "steps": [
+      {
+        "title": "Introductory call",
+        "description": "We discuss your situation, needs and goals in a free 30-minute call."
+      },
+      {
+        "title": "Tailored proposal",
+        "description": "You receive a clear proposal with scope, approach and rate within 48 hours."
+      },
+      {
+        "title": "Flying start",
+        "description": "After approval I start immediately. No lengthy onboarding — I get up to speed fast."
+      },
+      {
+        "title": "Ongoing collaboration",
+        "description": "Weekly updates, transparent communication and always reachable via your preferred channel."
+      }
+    ]
+  },
+  "whyMe": {
+    "heading": "Why Techvast?",
+    "subheading": "Not just an assistant — a partner who speaks your language",
+    "points": [
+      {
+        "title": "IT expertise",
+        "description": "I know the world of software, SaaS and digital products. No explanation needed."
+      },
+      {
+        "title": "Multilingual",
+        "description": "Fluent in Dutch, English and German. I communicate with your international clients."
+      },
+      {
+        "title": "Flexible",
+        "description": "No fixed contracts or long commitments. Scale up or down as needed."
+      },
+      {
+        "title": "Confidential",
+        "description": "Full discretion guaranteed. NDA available on request."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Ready to reclaim your time?",
+    "subheading": "Book a free introductory call. No obligations, just concrete answers.",
+    "button": "Get in touch"
+  },
+  "about": {
+    "eyebrow": "About me",
+    "heading": "Hi, I'm Sophie",
+    "intro": "Virtual assistant with a background in IT",
+    "bio": "After years of working as an executive assistant at tech companies in Amsterdam and Rotterdam, I decided to go independent in 2023. I combine my administrative expertise with deep knowledge of the IT sector to truly help entrepreneurs.\n\nMy clients are typically growing SaaS companies, digital agencies and IT freelancers looking for a reliable partner — someone who quickly understands how their business works and adds value from day one.",
+    "stats": [
+      { "value": "5+", "label": "years experience" },
+      { "value": "30+", "label": "happy clients" },
+      { "value": "3", "label": "languages" },
+      { "value": "100%", "label": "remote" }
+    ],
+    "skills": {
+      "heading": "Tooling & expertise",
+      "list": [
+        "Google Workspace",
+        "Microsoft 365",
+        "Notion",
+        "Jira & Confluence",
+        "Asana & Trello",
+        "HubSpot CRM",
+        "Intercom",
+        "Slack & Teams",
+        "Canva",
+        "Zapier"
+      ]
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Let's get acquainted",
+    "subheading": "Fill in the form and I'll get back to you within one business day.",
+    "unavailableHeading": "Currently unavailable",
+    "unavailableText": "I'm not accepting new clients at the moment. Send me an email if you'd like to join the waiting list.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Jane Smith",
+      "email": "Email address",
+      "emailPlaceholder": "jane@company.com",
+      "company": "Company name",
+      "companyPlaceholder": "Optional",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your situation and what you're looking for...",
+      "submit": "Send message",
+      "submitting": "Sending...",
+      "successHeading": "Message received!",
+      "successText": "Thank you. I'll get back to you within one business day.",
+      "errorText": "Something went wrong. Please try again or send an email."
+    }
+  },
+  "footer": {
+    "tagline": "Professional VA services for IT companies and startups.",
+    "links": {
+      "services": "Services",
+      "about": "About",
+      "contact": "Contact",
+      "privacy": "Privacy policy"
+    },
+    "rights": "All rights reserved."
+  },
+  "seo": {
+    "home": {
+      "title": "Techvast — Freelance Virtual Assistant for IT companies",
+      "description": "Professional VA services for IT companies and startups: administration, project management, customer service and more. Multilingual, flexible and ready to start."
+    },
+    "services": {
+      "title": "Services — Techvast",
+      "description": "Discover my VA services: administrative support, project management, customer service, research and social media. Tailored for IT companies and startups."
+    },
+    "about": {
+      "title": "About — Techvast",
+      "description": "Get to know me: freelance virtual assistant with 5+ years of experience in IT environments. Multilingual, reliable and always available."
+    },
+    "contact": {
+      "title": "Contact — Techvast",
+      "description": "Get in touch for a free introductory call. I'm happy to help."
+    }
+  }
+}

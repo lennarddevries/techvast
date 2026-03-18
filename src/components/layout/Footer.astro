@@ -1,0 +1,87 @@
+---
+import { useTranslations, type Locale } from "@/i18n/utils"
+
+interface Props {
+  locale: Locale
+}
+
+const { locale } = Astro.props
+const t = useTranslations(locale)
+
+const year = new Date().getFullYear()
+
+const links = [
+  {
+    label: t.footer.links.services,
+    href: locale === "nl" ? "/services" : `/${locale}/services`,
+  },
+  {
+    label: t.footer.links.about,
+    href: locale === "nl" ? "/about" : `/${locale}/about`,
+  },
+  {
+    label: t.footer.links.contact,
+    href: locale === "nl" ? "/contact" : `/${locale}/contact`,
+  },
+]
+---
+
+<footer class="mt-24 border-t border-border/60 bg-secondary/40">
+  <div class="mx-auto max-w-6xl px-6 py-12">
+    <div
+      class="flex flex-col gap-8 md:flex-row md:items-start md:justify-between"
+    >
+      <!-- Brand -->
+      <div class="max-w-xs">
+        <a
+          href={locale === "nl" ? "/" : `/${locale}/`}
+          class="font-heading text-xl font-semibold text-foreground transition-colors hover:text-accent"
+        >
+          Techvast
+        </a>
+        <p class="mt-2 text-sm leading-relaxed text-muted-foreground">
+          {t.footer.tagline}
+        </p>
+        <a
+          href="mailto:hello@techvast.nl"
+          class="mt-3 inline-block text-sm text-muted-foreground transition-colors hover:text-foreground"
+        >
+          hello@techvast.nl
+        </a>
+      </div>
+
+      <!-- Nav links -->
+      <nav aria-label="Footer navigation">
+        <ul class="flex flex-wrap gap-x-6 gap-y-2" role="list">
+          {
+            links.map((link) => (
+              <li>
+                <a
+                  href={link.href}
+                  class="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Bottom bar -->
+    <div
+      class="mt-8 flex flex-col gap-2 border-t border-border/60 pt-6 sm:flex-row sm:items-center sm:justify-between"
+    >
+      <p class="text-xs text-muted-foreground">
+        &copy; {year} Techvast. {t.footer.rights}
+      </p>
+      <a
+        href={locale === "nl" ? "/privacy" : `/${locale}/privacy`}
+        class="text-xs text-muted-foreground transition-colors hover:text-foreground"
+      >
+        {t.footer.links.privacy}
+      </a>
+    </div>
+  </div>
+</footer>
