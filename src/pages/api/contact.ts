@@ -273,7 +273,7 @@ export const POST: APIRoute = async ({ request }) => {
       )
     }
 
-    const cloudflareEnv = env as Env
+    const cloudflareEnv = env as unknown as Env
 
     // Verify Cloudflare Turnstile token
     const turnstileSecret = cloudflareEnv.TURNSTILE_SECRET
