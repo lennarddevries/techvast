@@ -1,15 +1,10 @@
 name: Deploy
+
 on:
-  workflow_dispatch:
-    inputs:
-      environment:
-        description: "Environment to deploy to"
-        required: true
-        default: "acc"
-        type: choice
-        options:
-          - acc
-          - prd
+  push:
+    branches:
+      - main
+      - acc
   pull_request:
 
 jobs:
@@ -36,13 +31,12 @@ jobs:
 
   deploy-prd:
     name: Deploy → PRD
-    if: github.event_name == 'workflow_dispatch' && github.event.inputs.environment == 'prd'
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-...
-  deploy-acc:
-    name: Deploy → ACC
-    if: github.event_name == 'workflow_dispatch' && github.event.inputs.environment == 'acc'
-    runs-on: ubuntu-latest
+    environment: prd
+    steps:
+      - uses: actions/checkout@v4
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
