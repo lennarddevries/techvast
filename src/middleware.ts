@@ -1,9 +1,10 @@
 import { defineMiddleware } from "astro:middleware"
+import { env } from "cloudflare:workers"
 
-export const onRequest = defineMiddleware((context, next) => {
-  const env = context.locals.runtime?.env
+export const onRequest = defineMiddleware(async (context, next) => {
+  const cloudflareEnv = env as any
 
-  if (env?.BASIC_AUTH_ENABLED === "true") {
+  if (cloudflareEnv?.BASIC_AUTH_ENABLED === "true") {
     const authHeader = context.request.headers.get("Authorization")
 
     if (!authHeader?.startsWith("Basic ")) {
