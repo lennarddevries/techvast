@@ -26,25 +26,39 @@ const links = [
 ]
 ---
 
-<footer class="mt-24 border-t border-border/60 bg-secondary/40">
-  <div class="mx-auto max-w-6xl px-6 py-12">
+<footer class="mt-24 bg-foreground text-primary-foreground">
+  <!-- Accent bar at top -->
+  <div class="h-1 w-full bg-accent"></div>
+
+  <div class="mx-auto max-w-6xl px-6 py-14">
     <div
-      class="flex flex-col gap-8 md:flex-row md:items-start md:justify-between"
+      class="flex flex-col gap-10 md:flex-row md:items-start md:justify-between"
     >
       <!-- Brand -->
       <div class="max-w-xs">
         <a
           href={locale === "nl" ? "/" : `/${locale}/`}
-          class="font-heading text-xl font-semibold text-foreground transition-colors hover:text-accent"
+          class="group flex items-center gap-3"
+          aria-label="Techvast — home"
         >
-          Techvast
+          <span
+            class="flex h-6 w-6 shrink-0 items-center justify-center bg-accent transition-transform duration-300 group-hover:rotate-45"
+            aria-hidden="true"
+          >
+            <span class="h-2 w-2 bg-accent-foreground/70"></span>
+          </span>
+          <span
+            class="font-heading text-sm font-bold tracking-[0.12em] text-primary-foreground uppercase transition-colors group-hover:text-accent"
+          >
+            Techvast
+          </span>
         </a>
-        <p class="mt-2 text-sm leading-relaxed text-muted-foreground">
+        <p class="mt-4 text-sm leading-relaxed text-primary-foreground/50">
           {t.footer.tagline}
         </p>
         <a
           href="mailto:hello@techvast.nl"
-          class="mt-3 inline-block text-sm text-muted-foreground transition-colors hover:text-foreground"
+          class="mt-3 inline-block text-sm text-primary-foreground/50 transition-colors hover:text-primary-foreground"
         >
           hello@techvast.nl
         </a>
@@ -52,13 +66,13 @@ const links = [
 
       <!-- Nav links -->
       <nav aria-label="Footer navigation">
-        <ul class="flex flex-wrap gap-x-6 gap-y-2" role="list">
+        <ul class="flex flex-col gap-3" role="list">
           {
             links.map((link) => (
               <li>
                 <a
                   href={link.href}
-                  class="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                  class="text-xs font-semibold tracking-wider text-primary-foreground/50 uppercase transition-colors hover:text-primary-foreground"
                 >
                   {link.label}
                 </a>
@@ -71,14 +85,14 @@ const links = [
 
     <!-- Bottom bar -->
     <div
-      class="mt-8 flex flex-col gap-2 border-t border-border/60 pt-6 sm:flex-row sm:items-center sm:justify-between"
+      class="mt-12 flex flex-col gap-2 border-t border-primary-foreground/10 pt-6 sm:flex-row sm:items-center sm:justify-between"
     >
-      <p class="text-xs text-muted-foreground">
+      <p class="text-xs text-primary-foreground/30">
         &copy; {year} Techvast. {t.footer.rights}
       </p>
       <a
         href={locale === "nl" ? "/privacy" : `/${locale}/privacy`}
-        class="text-xs text-muted-foreground transition-colors hover:text-foreground"
+        class="text-xs text-primary-foreground/30 transition-colors hover:text-primary-foreground/60"
       >
         {t.footer.links.privacy}
       </a>

@@ -1,86 +1,85 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
-@import "@fontsource-variable/inter";
 
 @custom-variant dark (&:is(.dark *));
 
-/* ─── Brand Palette — Nordic Gold ─────────────────────────────────────────── */
+/* ─── Geometric / Structural — Techvast Design System ─────────────────── */
 :root {
-  --background: oklch(0.975 0.008 85);
-  --foreground: oklch(0.14 0.025 258);
-  --card: oklch(0.982 0.006 85);
-  --card-foreground: oklch(0.14 0.025 258);
-  --popover: oklch(0.982 0.006 85);
-  --popover-foreground: oklch(0.14 0.025 258);
-  --primary: oklch(0.14 0.025 258);
-  --primary-foreground: oklch(0.975 0.008 85);
-  --secondary: oklch(0.94 0.01 85);
-  --secondary-foreground: oklch(0.14 0.025 258);
-  --muted: oklch(0.94 0.01 85);
-  --muted-foreground: oklch(0.5 0.02 258);
-  --accent: oklch(0.75 0.16 72);
-  --accent-foreground: oklch(0.14 0.025 258);
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.10 0.028 258);
+  --card: oklch(0.985 0.004 258);
+  --card-foreground: oklch(0.10 0.028 258);
+  --popover: oklch(0.985 0.004 258);
+  --popover-foreground: oklch(0.10 0.028 258);
+  --primary: oklch(0.10 0.028 258);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.96 0.007 258);
+  --secondary-foreground: oklch(0.10 0.028 258);
+  --muted: oklch(0.96 0.007 258);
+  --muted-foreground: oklch(0.47 0.025 258);
+  --accent: oklch(0.78 0.20 72);
+  --accent-foreground: oklch(0.10 0.028 258);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.88 0.012 85);
-  --input: oklch(0.88 0.012 85);
-  --ring: oklch(0.75 0.16 72);
-  --radius: 0.5rem;
+  --border: oklch(0.84 0.016 258);
+  --input: oklch(0.84 0.016 258);
+  --ring: oklch(0.78 0.20 72);
+  --radius: 0.2rem;
 
   /* Availability indicator colors */
   --available: oklch(0.62 0.17 155);
   --unavailable: oklch(0.5 0.02 258);
 
   /* Chart */
-  --chart-1: oklch(0.75 0.16 72);
+  --chart-1: oklch(0.78 0.20 72);
   --chart-2: oklch(0.62 0.17 155);
   --chart-3: oklch(0.55 0.2 260);
   --chart-4: oklch(0.68 0.15 30);
   --chart-5: oklch(0.5 0.02 258);
 
-  /* Sidebar (unchanged from shadcn default) */
-  --sidebar: oklch(0.975 0.008 85);
-  --sidebar-foreground: oklch(0.14 0.025 258);
-  --sidebar-primary: oklch(0.14 0.025 258);
-  --sidebar-primary-foreground: oklch(0.975 0.008 85);
-  --sidebar-accent: oklch(0.94 0.01 85);
-  --sidebar-accent-foreground: oklch(0.14 0.025 258);
-  --sidebar-border: oklch(0.88 0.012 85);
-  --sidebar-ring: oklch(0.75 0.16 72);
+  /* Sidebar */
+  --sidebar: oklch(0.96 0.007 258);
+  --sidebar-foreground: oklch(0.10 0.028 258);
+  --sidebar-primary: oklch(0.10 0.028 258);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.92 0.012 258);
+  --sidebar-accent-foreground: oklch(0.10 0.028 258);
+  --sidebar-border: oklch(0.84 0.016 258);
+  --sidebar-ring: oklch(0.78 0.20 72);
 }
 
 .dark {
-  --background: oklch(0.13 0.02 258);
-  --foreground: oklch(0.96 0.005 85);
-  --card: oklch(0.18 0.02 258);
-  --card-foreground: oklch(0.96 0.005 85);
-  --popover: oklch(0.18 0.02 258);
-  --popover-foreground: oklch(0.96 0.005 85);
-  --primary: oklch(0.96 0.005 85);
-  --primary-foreground: oklch(0.13 0.02 258);
-  --secondary: oklch(0.22 0.02 258);
-  --secondary-foreground: oklch(0.96 0.005 85);
-  --muted: oklch(0.22 0.02 258);
-  --muted-foreground: oklch(0.65 0.02 258);
-  --accent: oklch(0.75 0.16 72);
-  --accent-foreground: oklch(0.13 0.02 258);
+  --background: oklch(0.10 0.028 258);
+  --foreground: oklch(0.97 0.003 85);
+  --card: oklch(0.15 0.025 258);
+  --card-foreground: oklch(0.97 0.003 85);
+  --popover: oklch(0.15 0.025 258);
+  --popover-foreground: oklch(0.97 0.003 85);
+  --primary: oklch(0.97 0.003 85);
+  --primary-foreground: oklch(0.10 0.028 258);
+  --secondary: oklch(0.19 0.025 258);
+  --secondary-foreground: oklch(0.97 0.003 85);
+  --muted: oklch(0.19 0.025 258);
+  --muted-foreground: oklch(0.62 0.022 258);
+  --accent: oklch(0.78 0.20 72);
+  --accent-foreground: oklch(0.10 0.028 258);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
+  --border: oklch(1 0 0 / 12%);
   --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.75 0.16 72);
-  --sidebar: oklch(0.18 0.02 258);
-  --sidebar-foreground: oklch(0.96 0.005 85);
-  --sidebar-primary: oklch(0.75 0.16 72);
-  --sidebar-primary-foreground: oklch(0.13 0.02 258);
-  --sidebar-accent: oklch(0.22 0.02 258);
-  --sidebar-accent-foreground: oklch(0.96 0.005 85);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.75 0.16 72);
+  --ring: oklch(0.78 0.20 72);
+  --sidebar: oklch(0.15 0.025 258);
+  --sidebar-foreground: oklch(0.97 0.003 85);
+  --sidebar-primary: oklch(0.78 0.20 72);
+  --sidebar-primary-foreground: oklch(0.10 0.028 258);
+  --sidebar-accent: oklch(0.19 0.025 258);
+  --sidebar-accent-foreground: oklch(0.97 0.003 85);
+  --sidebar-border: oklch(1 0 0 / 12%);
+  --sidebar-ring: oklch(0.78 0.20 72);
 }
 
 @theme inline {
-  --font-sans: "Inter Variable", system-ui, sans-serif;
-  --font-heading: "Cormorant Garamond", "Georgia", serif;
+  --font-sans: "Outfit", system-ui, sans-serif;
+  --font-heading: "Syne", sans-serif;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -135,7 +134,6 @@
     scroll-behavior: smooth;
   }
 
-  /* Heading font applied to heading elements */
   h1,
   h2,
   h3,
@@ -143,7 +141,7 @@
   h5,
   h6 {
     font-family: var(--font-heading);
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
   }
 }
 
@@ -151,6 +149,62 @@
 @layer utilities {
   .font-heading {
     font-family: var(--font-heading);
+  }
+
+  /* Geometric corner bracket marks */
+  .geo-corner {
+    position: relative;
+  }
+  .geo-corner::before,
+  .geo-corner::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-color: var(--accent);
+    border-style: solid;
+    opacity: 0.65;
+  }
+  .geo-corner::before {
+    top: -2px;
+    left: -2px;
+    border-width: 2px 0 0 2px;
+  }
+  .geo-corner::after {
+    bottom: -2px;
+    right: -2px;
+    border-width: 0 2px 2px 0;
+  }
+
+  /* Entry reveal animations */
+  @keyframes reveal-up {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes line-grow {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  .animate-reveal-up {
+    opacity: 0;
+    animation: reveal-up 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .animate-line-grow {
+    transform-origin: left;
+    animation: line-grow 0.75s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
 
   /* Availability indicator dot animation */

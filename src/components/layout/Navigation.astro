@@ -55,21 +55,26 @@ const navLinks = [
 ]
 ---
 
-<header
-  class="sticky top-0 z-50 border-b border-border/60 bg-background/90 backdrop-blur-md"
->
+<header class="sticky top-0 z-50 border-b-2 border-foreground/8 bg-background">
   <nav
-    class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4"
+    class="mx-auto flex max-w-6xl items-center justify-between px-6 py-3.5"
     aria-label="Main navigation"
   >
-    <!-- Logo -->
+    <!-- Logo: geometric mark + wordmark -->
     <a
       href={locale === "nl" ? "/" : `/${locale}/`}
       class="group flex items-center gap-3"
       aria-label="Techvast — home"
     >
+      <!-- Geometric accent square -->
       <span
-        class="font-heading text-xl font-semibold tracking-tight text-foreground transition-colors group-hover:text-accent"
+        class="flex h-6 w-6 shrink-0 items-center justify-center bg-accent transition-transform duration-300 group-hover:rotate-45"
+        aria-hidden="true"
+      >
+        <span class="h-2 w-2 bg-accent-foreground/70"></span>
+      </span>
+      <span
+        class="font-heading text-sm font-bold tracking-[0.12em] text-foreground uppercase transition-colors group-hover:text-accent"
       >
         Techvast
       </span>
@@ -77,13 +82,13 @@ const navLinks = [
     </a>
 
     <!-- Desktop nav links -->
-    <ul class="hidden items-center gap-1 md:flex" role="list">
+    <ul class="hidden items-center gap-0 md:flex" role="list">
       {
         navLinks.map((link) => (
           <li>
             {link.disabled ? (
               <span
-                class="relative cursor-not-allowed px-3 py-2 text-sm text-muted-foreground/50 select-none"
+                class="relative cursor-not-allowed px-4 py-3 text-xs font-semibold tracking-wider text-muted-foreground/40 uppercase select-none"
                 title={link.hint}
                 aria-disabled="true"
               >
@@ -93,16 +98,16 @@ const navLinks = [
               <a
                 href={link.href!}
                 class:list={[
-                  "relative rounded-md px-3 py-2 text-sm transition-colors",
+                  "relative block px-4 py-3 text-xs font-semibold tracking-wider uppercase transition-colors",
                   link.current
-                    ? "font-medium text-foreground"
-                    : "text-muted-foreground hover:bg-secondary hover:text-foreground",
+                    ? "text-foreground"
+                    : "text-muted-foreground hover:text-foreground",
                 ]}
                 aria-current={link.current ? "page" : undefined}
               >
                 {link.label}
                 {link.current && (
-                  <span class="absolute right-3 bottom-0 left-3 h-px rounded-full bg-accent" />
+                  <span class="absolute right-4 bottom-0 left-4 h-0.5 bg-accent" />
                 )}
               </a>
             )}
@@ -112,7 +117,7 @@ const navLinks = [
     </ul>
 
     <!-- Desktop right: locale switcher + CTA -->
-    <div class="hidden items-center gap-4 md:flex">
+    <div class="hidden items-center gap-5 md:flex">
       <!-- Locale switcher -->
       <div
         class="flex items-center gap-0.5 text-xs"
@@ -122,15 +127,15 @@ const navLinks = [
         {
           localeSwitcher.map((item, i) => (
             <>
-              {i > 0 && <span class="text-border">·</span>}
+              {i > 0 && <span class="mx-0.5 text-border">·</span>}
               {item.current ? (
-                <span class="px-1.5 py-0.5 font-semibold text-foreground">
+                <span class="px-1.5 py-0.5 font-bold tracking-wider text-foreground uppercase">
                   {item.label}
                 </span>
               ) : (
                 <a
                   href={item.href}
-                  class="px-1.5 py-0.5 text-muted-foreground transition-colors hover:text-foreground"
+                  class="px-1.5 py-0.5 font-medium tracking-wider text-muted-foreground uppercase transition-colors hover:text-foreground"
                   hreflang={item.locale}
                   lang={item.locale}
                 >
@@ -142,14 +147,28 @@ const navLinks = [
         }
       </div>
 
-      <!-- CTA button (only shown when available) -->
+      <!-- CTA button: sharp, uppercase, accent -->
       {
         isAvailable && (
           <a
             href={locale === "nl" ? "/contact" : `/${locale}/contact`}
-            class="inline-flex h-8 items-center rounded-lg bg-accent px-3 text-sm font-medium text-accent-foreground transition-all hover:bg-accent/85 active:scale-[0.98]"
+            class="inline-flex h-9 items-center gap-2 bg-accent px-4 text-xs font-bold tracking-wider text-accent-foreground uppercase transition-colors hover:bg-accent/85 active:scale-[0.98]"
           >
             {t.nav.contact}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
           </a>
         )
       }
@@ -159,7 +178,7 @@ const navLinks = [
     <button
       id="mobile-menu-btn"
       type="button"
-      class="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground md:hidden"
+      class="flex h-9 w-9 items-center justify-center text-muted-foreground transition-colors hover:text-foreground md:hidden"
       aria-expanded="false"
       aria-controls="mobile-menu"
       aria-label="Open menu"
@@ -167,25 +186,25 @@ const navLinks = [
       <svg
         id="icon-open"
         xmlns="http://www.w3.org/2000/svg"
-        width="18"
-        height="18"
+        width="20"
+        height="20"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
         stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        stroke-linecap="square"
+        stroke-linejoin="miter"
         aria-hidden="true"
       >
         <line x1="4" x2="20" y1="6" y2="6"></line>
-        <line x1="4" x2="20" y1="12" y2="12"></line>
+        <line x1="4" x2="14" y1="12" y2="12"></line>
         <line x1="4" x2="20" y1="18" y2="18"></line>
       </svg>
       <svg
         id="icon-close"
         xmlns="http://www.w3.org/2000/svg"
-        width="18"
-        height="18"
+        width="20"
+        height="20"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
@@ -203,18 +222,18 @@ const navLinks = [
   <!-- Mobile menu -->
   <div
     id="mobile-menu"
-    class="hidden border-t border-border/60 bg-background md:hidden"
+    class="hidden border-t-2 border-foreground/8 bg-background md:hidden"
     role="dialog"
     aria-label="Mobile navigation"
   >
-    <ul class="flex flex-col gap-1 px-6 py-4" role="list">
+    <ul class="flex flex-col px-6 py-4" role="list">
       {
         navLinks.map((link) => (
           <li>
             {link.disabled ? (
-              <span class="block cursor-not-allowed px-3 py-2.5 text-sm text-muted-foreground/50">
+              <span class="block cursor-not-allowed border-b border-border/40 px-0 py-3 text-xs font-semibold tracking-wider text-muted-foreground/40 uppercase">
                 {link.label}
-                <span class="mt-0.5 block text-xs text-muted-foreground/40">
+                <span class="mt-0.5 block text-xs font-normal tracking-normal text-muted-foreground/40 normal-case">
                   {link.hint}
                 </span>
               </span>
@@ -222,10 +241,10 @@ const navLinks = [
               <a
                 href={link.href!}
                 class:list={[
-                  "block rounded-lg px-3 py-2.5 text-sm transition-colors",
+                  "block border-b border-border/40 py-3 text-xs font-semibold tracking-wider uppercase transition-colors",
                   link.current
-                    ? "bg-secondary font-medium text-foreground"
-                    : "text-muted-foreground hover:bg-secondary hover:text-foreground",
+                    ? "text-foreground"
+                    : "text-muted-foreground hover:text-foreground",
                 ]}
                 aria-current={link.current ? "page" : undefined}
               >
@@ -238,17 +257,17 @@ const navLinks = [
     </ul>
 
     <!-- Mobile locale switcher -->
-    <div
-      class="flex items-center gap-3 px-9 pb-4 text-sm text-muted-foreground"
-    >
+    <div class="flex items-center gap-4 px-6 pt-2 pb-5">
       {
         localeSwitcher.map((item) =>
           item.current ? (
-            <span class="font-semibold text-foreground">{item.label}</span>
+            <span class="text-xs font-bold tracking-wider text-foreground uppercase">
+              {item.label}
+            </span>
           ) : (
             <a
               href={item.href}
-              class="transition-colors hover:text-foreground"
+              class="text-xs font-medium tracking-wider text-muted-foreground uppercase transition-colors hover:text-foreground"
               hreflang={item.locale}
             >
               {item.label}
