@@ -12,6 +12,8 @@ on:
         required: true
       CLOUDFLARE_ACCOUNT_ID:
         required: true
+      PUBLIC_TURNSTILE_SITEKEY:
+        required: false
 
 jobs:
   deploy:
@@ -37,6 +39,8 @@ jobs:
 
       - name: Build
         run: bun run build
+        env:
+          PUBLIC_TURNSTILE_SITEKEY: ${{ secrets.PUBLIC_TURNSTILE_SITEKEY }}
 
       - name: Deploy
         run: bunx wrangler deploy --config dist/server/wrangler.json --env ${{ inputs.environment }}
