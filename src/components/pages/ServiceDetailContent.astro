@@ -38,7 +38,7 @@ const { title, description, price } = entry.data
             href={locale === "nl" ? "/" : `/${locale}/`}
             class="transition-colors hover:text-foreground"
           >
-            Home
+            {t.nav.home}
           </a>
         </li>
         <li aria-hidden="true" class="text-border">/</li>
@@ -84,7 +84,7 @@ const { title, description, price } = entry.data
         {title}
       </h1>
       <div class="mt-8 flex items-center gap-0">
-        <span class="h-[3px] w-14 shrink-0 bg-accent"></span>
+        <span class="h-0.5 w-14 shrink-0 bg-accent"></span>
         <span class="h-px flex-1 bg-foreground/12"></span>
       </div>
       <p class="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">

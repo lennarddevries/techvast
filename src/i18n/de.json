@@ -111,6 +111,10 @@
     "subheading": "Füllen Sie das Formular aus und ich melde mich innerhalb eines Werktages.",
     "unavailableHeading": "Derzeit nicht verfügbar",
     "unavailableText": "Ich nehme derzeit keine neuen Kunden an. Schreiben Sie mir eine E-Mail, wenn Sie auf die Warteliste möchten.",
+    "emailLabel": "E-Mail",
+    "emailNote": "Oder schreiben Sie uns direkt eine E-Mail. Ich antworte innerhalb eines Werktages.",
+    "linkedInLabel": "LinkedIn",
+    "viewProfile": "Profil ansehen",
     "form": {
       "name": "Name",
       "namePlaceholder": "Max Mustermann",

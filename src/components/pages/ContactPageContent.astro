@@ -57,20 +57,19 @@ const isAvailable = availData?.data?.available ?? true
             <aside class="flex flex-col gap-5 lg:col-span-2">
               <div class="border border-foreground/12 bg-card p-7 transition-colors hover:border-accent/40">
                 <p class="mb-1 text-xs font-bold tracking-wider text-accent uppercase">
-                  E-mail
+                  {c.emailLabel}
                 </p>
                 <h2 class="mb-3 font-heading text-xl font-bold text-foreground">
                   hello@techvast.nl
                 </h2>
                 <p class="text-sm leading-relaxed text-muted-foreground">
-                  Stuur ook gerust een directe e-mail. Ik reageer binnen één
-                  werkdag.
+                  {c.emailNote}
                 </p>
               </div>
 
               <div class="border border-foreground/12 bg-card p-7 transition-colors hover:border-accent/40">
                 <p class="mb-1 text-xs font-bold tracking-wider text-accent uppercase">
-                  LinkedIn
+                  {c.linkedInLabel}
                 </p>
                 <h2 class="mb-3 font-heading text-xl font-bold text-foreground">
                   linkedin.com/in/techvast
@@ -81,7 +80,7 @@ const isAvailable = availData?.data?.available ?? true
                   rel="noopener noreferrer"
                   class="inline-flex items-center gap-1.5 text-xs font-bold tracking-wider text-foreground uppercase transition-colors hover:text-accent"
                 >
-                  Profiel bekijken
+                  {c.viewProfile}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="12"

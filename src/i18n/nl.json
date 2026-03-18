@@ -111,6 +111,10 @@
     "subheading": "Vul het formulier in en ik neem binnen één werkdag contact met u op.",
     "unavailableHeading": "Momenteel niet beschikbaar",
     "unavailableText": "Ik neem op dit moment geen nieuwe klanten aan. Stuur me een e-mail als u op de wachtlijst wilt.",
+    "emailLabel": "E-mail",
+    "emailNote": "Stuur ook gerust een directe e-mail. Ik reageer binnen één werkdag.",
+    "linkedInLabel": "LinkedIn",
+    "viewProfile": "Profiel bekijken",
     "form": {
       "name": "Naam",
       "namePlaceholder": "Jan de Vries",

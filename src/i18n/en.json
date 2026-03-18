@@ -111,6 +111,10 @@
     "subheading": "Fill in the form and I'll get back to you within one business day.",
     "unavailableHeading": "Currently unavailable",
     "unavailableText": "I'm not accepting new clients at the moment. Send me an email if you'd like to join the waiting list.",
+    "emailLabel": "E-mail",
+    "emailNote": "Or send a direct email. I respond within one business day.",
+    "linkedInLabel": "LinkedIn",
+    "viewProfile": "View profile",
     "form": {
       "name": "Name",
       "namePlaceholder": "Jane Smith",
