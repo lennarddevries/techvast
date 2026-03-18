@@ -8,7 +8,7 @@ order: 10
 targetAudience: "Groeiende bedrijven"
 longDescription: "Zorg dat nieuwe medewerkers vanaf dag één productief zijn. Wij regelen de hardware, accounts, software en een soepele IT onboarding."
 serviceId: "workspace-onboarding"
-price: "Op aanvraag"
+price: "Vanaf € 55 / werkplek"
 ---
 
 ### Wat het is

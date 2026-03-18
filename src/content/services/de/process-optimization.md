@@ -8,7 +8,7 @@ order: 5
 targetAudience: "Wachsende Unternehmen"
 longDescription: "Mache den Schritt zu einem vollständig digitalen Büro. Wir analysieren deine aktuellen Arbeitsmethoden und implementieren intelligente digitale Lösungen, die die Produktivität steigern."
 serviceId: "process-optimization"
-price: "Auf Anfrage"
+price: "Ab € 65 / Stunde"
 ---
 
 ### Was es ist

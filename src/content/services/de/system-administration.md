@@ -8,7 +8,7 @@ order: 9
 targetAudience: "Unternehmen ohne eigene IT-Abteilung"
 longDescription: "Von der Serverwartung bis zum Netzwerkmanagement und zur Arbeitsplatzunterstützung. Wir halten deine gesamte IT-Infrastruktur sicher, aktuell und am Laufen."
 serviceId: "system-administration"
-price: "Auf Anfrage"
+price: "Ab € 65 / Stunde"
 ---
 
 ### Was es ist

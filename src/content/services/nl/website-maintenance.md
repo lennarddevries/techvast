@@ -8,7 +8,7 @@ order: 3
 targetAudience: "Website eigenaren en ondernemers"
 longDescription: "Laat de technische kant van je website aan ons over. Wij zorgen voor updates, back-ups, beveiliging en optimale laadtijden van jouw online platform."
 serviceId: "website-maintenance"
-price: "Vanaf €49 p/m"
+price: "Vanaf € 45 / maand"
 ---
 
 ### Wat het is

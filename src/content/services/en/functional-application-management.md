@@ -8,7 +8,7 @@ order: 8
 targetAudience: "Medium to large organizations"
 longDescription: "We ensure your business applications continue to do what they are supposed to do. Whether it is resolving malfunctions, implementing updates or supporting users."
 serviceId: "functional-application-management"
-price: "On request"
+price: "From € 65 / hour"
 ---
 
 ### What it is

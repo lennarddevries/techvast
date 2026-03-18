@@ -8,7 +8,7 @@ order: 2
 targetAudience: "Unternehmen, die online wachsen wollen"
 longDescription: "Von einer komplett neuen Website bis zur Neugestaltung deiner aktuellen Seite. Wir bauen blitzschnelle, benutzerfreundliche Websites mit Fokus auf Konversion und SEO."
 serviceId: "website-development"
-price: "Auf Anfrage"
+price: "Ab € 850"
 ---
 
 ### Was es ist

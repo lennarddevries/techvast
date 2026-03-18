@@ -8,7 +8,7 @@ order: 12
 targetAudience: "Decision makers and managers"
 longDescription: "Do not pay too much for software or hardware. We help select the right suppliers, negotiate contracts and manage relationships."
 serviceId: "it-procurement"
-price: "On request"
+price: "From € 65 / hour"
 ---
 
 ### What it is

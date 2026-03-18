@@ -8,7 +8,7 @@ order: 7
 targetAudience: "Tech-driven organizations"
 longDescription: "No more manual retyping. We build secure and robust API connections between your webshop, accounting, CRM and other business software."
 serviceId: "api-integrations"
-price: "On request"
+price: "From € 75 / hour"
 ---
 
 ### What it is

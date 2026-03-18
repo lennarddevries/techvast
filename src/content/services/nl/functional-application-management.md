@@ -8,7 +8,7 @@ order: 8
 targetAudience: "Middelgrote tot grote organisaties"
 longDescription: "Wij zorgen dat je bedrijfsapplicaties blijven doen wat ze moeten doen. Of het nu gaat om het verhelpen van storingen, het doorvoeren van updates of het ondersteunen van gebruikers."
 serviceId: "functional-application-management"
-price: "Op aanvraag"
+price: "Vanaf € 65 / uur"
 ---
 
 ### Wat het is

@@ -8,7 +8,7 @@ order: 9
 targetAudience: "Bedrijven zonder eigen IT afdeling"
 longDescription: "Van serveronderhoud tot netwerkbeheer en werkplekondersteuning. Wij houden je volledige IT infrastructuur veilig, up-to-date en draaiend."
 serviceId: "system-administration"
-price: "Op aanvraag"
+price: "Vanaf € 65 / uur"
 ---
 
 ### Wat het is

@@ -8,7 +8,7 @@ order: 9
 targetAudience: "Companies without an in-house IT department"
 longDescription: "From server maintenance to network management and workplace support. We keep your entire IT infrastructure secure, up-to-date and running."
 serviceId: "system-administration"
-price: "On request"
+price: "From € 65 / hour"
 ---
 
 ### What it is

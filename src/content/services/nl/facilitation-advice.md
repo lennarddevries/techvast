@@ -8,7 +8,7 @@ order: 17
 targetAudience: "Directie en management"
 longDescription: "Welke kant moet het op met de IT van je bedrijf? Wij begeleiden strategische sessies en geven onafhankelijk advies om de juiste keuzes te maken voor de toekomst."
 serviceId: "facilitation-advice"
-price: "Op aanvraag"
+price: "Vanaf € 70 / uur"
 ---
 
 ### Wat het is

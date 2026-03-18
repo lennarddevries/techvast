@@ -8,7 +8,7 @@ order: 11
 targetAudience: "Unternehmen mit Innovationsprojekten"
 longDescription: "Ein neues System implementieren oder in die Cloud wechseln? Wir leiten deine IT-Projekte in die richtigen Bahnen, im Rahmen von Zeit und Budget."
 serviceId: "it-project-management"
-price: "Auf Anfrage"
+price: "Ab € 70 / Stunde"
 ---
 
 ### Was es ist

@@ -8,7 +8,7 @@ order: 3
 targetAudience: "Website-Besitzer und Unternehmer"
 longDescription: "Überlasse uns die technische Seite deiner Website. Wir kümmern uns um Updates, Backups, Sicherheit und optimale Ladezeiten für deine Online-Plattform."
 serviceId: "website-maintenance"
-price: "Ab 49 € p.M."
+price: "Ab € 45 / Monat"
 ---
 
 ### Was es ist

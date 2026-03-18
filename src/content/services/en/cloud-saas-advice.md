@@ -8,7 +8,7 @@ order: 14
 targetAudience: "Modern organizations"
 longDescription: "The range of cloud software is huge. We provide independent advice on the best SaaS solutions for your specific business needs and help with migration."
 serviceId: "cloud-saas-advice"
-price: "On request"
+price: "From € 65 / hour"
 ---
 
 ### What it is

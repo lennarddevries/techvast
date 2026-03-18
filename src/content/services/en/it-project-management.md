@@ -8,7 +8,7 @@ order: 11
 targetAudience: "Companies with innovation projects"
 longDescription: "Implementing a new system or migrating to the cloud? We manage your IT projects properly, within time and budget."
 serviceId: "it-project-management"
-price: "On request"
+price: "From € 70 / hour"
 ---
 
 ### What it is

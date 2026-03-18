@@ -8,7 +8,7 @@ order: 2
 targetAudience: "Bedrijven die online willen groeien"
 longDescription: "Van een compleet nieuwe website tot het restylen van je huidige site. Wij bouwen razendsnelle, gebruiksvriendelijke websites met focus op conversie en SEO."
 serviceId: "website-development"
-price: "Op aanvraag"
+price: "Vanaf € 850"
 ---
 
 ### Wat het is

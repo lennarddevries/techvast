@@ -8,7 +8,7 @@ order: 7
 targetAudience: "Technologieorientierte Organisationen"
 longDescription: "Kein manuelles Abtippen mehr. Wir bauen sichere und robuste API-Verbindungen zwischen deinem Webshop, deiner Buchhaltung, deinem CRM und anderer Unternehmenssoftware."
 serviceId: "api-integrations"
-price: "Auf Anfrage"
+price: "Ab € 75 / Stunde"
 ---
 
 ### Was es ist

@@ -8,7 +8,7 @@ order: 11
 targetAudience: "Bedrijven met vernieuwingstrajecten"
 longDescription: "Een nieuw systeem implementeren of overstappen naar de cloud? Wij leiden je IT projecten in goede banen, binnen de tijd en het budget."
 serviceId: "it-project-management"
-price: "Op aanvraag"
+price: "Vanaf € 70 / uur"
 ---
 
 ### Wat het is

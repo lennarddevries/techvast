@@ -8,7 +8,7 @@ order: 3
 targetAudience: "Website owners and entrepreneurs"
 longDescription: "Leave the technical side of your website to us. We take care of updates, backups, security and optimal loading times for your online platform."
 serviceId: "website-maintenance"
-price: "From €49 p/m"
+price: "From € 45 / month"
 ---
 
 ### What it is

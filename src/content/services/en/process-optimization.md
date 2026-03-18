@@ -8,7 +8,7 @@ order: 5
 targetAudience: "Growing companies"
 longDescription: "Make the move to a fully digital office. We analyze your current working methods and implement smart digital solutions that increase productivity."
 serviceId: "process-optimization"
-price: "On request"
+price: "From € 65 / hour"
 ---
 
 ### What it is

@@ -8,7 +8,7 @@ order: 12
 targetAudience: "Besluitvormers en managers"
 longDescription: "Betaal niet te veel voor software of hardware. Wij helpen bij het selecteren van de juiste leveranciers, onderhandelen over contracten en beheren de relaties."
 serviceId: "it-procurement"
-price: "Op aanvraag"
+price: "Vanaf € 65 / uur"
 ---
 
 ### Wat het is

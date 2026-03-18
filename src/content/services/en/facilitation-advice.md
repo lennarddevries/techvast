@@ -8,7 +8,7 @@ order: 17
 targetAudience: "Board and management"
 longDescription: "Which direction should your company's IT go? We facilitate strategic sessions and provide independent advice to make the right choices for the future."
 serviceId: "facilitation-advice"
-price: "On request"
+price: "From € 70 / hour"
 ---
 
 ### What it is

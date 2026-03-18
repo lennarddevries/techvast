@@ -8,7 +8,7 @@ order: 5
 targetAudience: "Groeibedrijven"
 longDescription: "Maak de stap naar een volledig digitaal kantoor. Wij analyseren je huidige werkwijze en implementeren slimme digitale oplossingen die de productiviteit verhogen."
 serviceId: "process-optimization"
-price: "Op aanvraag"
+price: "Vanaf € 65 / uur"
 ---
 
 ### Wat het is

@@ -8,7 +8,7 @@ order: 15
 targetAudience: "Alle bedrijven"
 longDescription: "Problemen met de mail, een trage computer of vergeten wachtwoorden? Onze vriendelijke helpdesk lost problemen snel op, zodat jouw team direct verder kan."
 serviceId: "it-support"
-price: "Op aanvraag"
+price: "Vanaf € 55 / uur"
 ---
 
 ### Wat het is
