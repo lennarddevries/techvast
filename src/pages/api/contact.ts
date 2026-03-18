@@ -10,6 +10,7 @@ function buildNotificationText(
   name: string,
   email: string,
   company: string | undefined,
+  reason: string,
   message: string,
   locale: string
 ): string {
@@ -19,6 +20,7 @@ function buildNotificationText(
     `Name:    ${name}`,
     `Email:   ${email}`,
     `Company: ${company || "—"}`,
+    `Reason:  ${reason}`,
     `Locale:  ${locale.toUpperCase()}`,
     "",
     "Message:",
@@ -31,6 +33,7 @@ function buildNotificationHtml(
   name: string,
   email: string,
   company: string | undefined,
+  reason: string,
   message: string,
   locale: string
 ): string {
@@ -79,6 +82,12 @@ function buildNotificationHtml(
               </tr>`
                   : ""
               }
+              <tr>
+                <td style="padding:20px 0;border-bottom:1px solid #f0f0f0;">
+                  <p style="margin:0 0 4px;font-size:10px;font-weight:700;letter-spacing:0.12em;color:#c9a84c;text-transform:uppercase;">Reason</p>
+                  <p style="margin:0;font-size:15px;color:#1a1a2e;">${reason}</p>
+                </td>
+              </tr>
               <tr>
                 <td style="padding:20px 0;border-bottom:1px solid #f0f0f0;">
                   <p style="margin:0 0 4px;font-size:10px;font-weight:700;letter-spacing:0.12em;color:#c9a84c;text-transform:uppercase;">Locale</p>
@@ -245,17 +254,19 @@ function confirmationSubject(locale: string): string {
 export const POST: APIRoute = async ({ request }) => {
   try {
     const body = await request.json()
-    const { name, email, company, message, turnstileToken, locale } = body as {
-      name: string
-      email: string
-      company?: string
-      message: string
-      turnstileToken: string
-      locale: string
-    }
+    const { name, email, company, reason, message, turnstileToken, locale } =
+      body as {
+        name: string
+        email: string
+        company?: string
+        reason: string
+        message: string
+        turnstileToken: string
+        locale: string
+      }
 
     // Validate required fields
-    if (!name || !email || !message || !turnstileToken) {
+    if (!name || !email || !reason || !message || !turnstileToken) {
       return new Response(
         JSON.stringify({ error: "Missing required fields" }),
         { status: 400, headers: { "Content-Type": "application/json" } }
@@ -315,8 +326,22 @@ export const POST: APIRoute = async ({ request }) => {
         to: TO_EMAIL,
         replyTo: email,
         subject: `New contact from ${name}${company ? ` (${company})` : ""}`,
-        html: buildNotificationHtml(name, email, company, message, locale),
-        text: buildNotificationText(name, email, company, message, locale),
+        html: buildNotificationHtml(
+          name,
+          email,
+          company,
+          reason,
+          message,
+          locale
+        ),
+        text: buildNotificationText(
+          name,
+          email,
+          company,
+          reason,
+          message,
+          locale
+        ),
       }),
       // 2. Confirmation to the sender
       resend.emails.send({

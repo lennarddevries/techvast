@@ -28,6 +28,10 @@ const services = defineCollection({
     featured: z.boolean().default(false),
     /** Controls sort order in service lists */
     order: z.number().default(99),
+    /** Target audience description */
+    targetAudience: z.string().optional(),
+    /** Long description for the service detail page */
+    longDescription: z.string().optional(),
     /** Canonical service ID shared across locales (e.g. "administrative-support") */
     serviceId: z.string(),
     /** Starting price hint */

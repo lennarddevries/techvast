@@ -4,7 +4,7 @@ on:
   workflow_call:
     inputs:
       environment:
-        description: 'Target environment (prd or acc)'
+        description: "Target environment (prd or acc)"
         required: true
         type: string
     secrets:

@@ -22,10 +22,26 @@ if (!entry) {
 }
 
 const { Content } = await entry.render()
-const { title, description, price } = entry.data
+const { title, description, price, serviceId } = entry.data
+
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: title,
+  description: description,
+  provider: {
+    "@type": "Organization",
+    name: "Techvast",
+  },
+  url: `https://techvast.nl${locale === "nl" ? "" : `/${locale}`}/services/${serviceId}`,
+}
 ---
 
-<Layout title={`${title} — Techvast`} description={description}>
+<Layout
+  title={`${title} — Techvast`}
+  description={description}
+  jsonLd={serviceJsonLd}
+>
   <!-- Breadcrumb -->
   <nav class="border-b border-border/60 px-6 py-4" aria-label="Breadcrumb">
     <div class="mx-auto max-w-4xl">

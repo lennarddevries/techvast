@@ -13,104 +13,108 @@
     "unavailable": "Niet beschikbaar"
   },
   "hero": {
-    "eyebrow": "Freelance Virtueel Assistent",
-    "headline": "Meer tijd voor\nwat echt telt",
-    "subheadline": "Ik ondersteun IT-bedrijven en startups met administratie, projectbeheer en klantenservice — zodat u zich kunt focussen op groei.",
-    "ctaPrimary": "Bekijk mijn diensten",
-    "ctaSecondary": "Neem contact op",
+    "eyebrow": "Jouw technische houvast",
+    "headline": "Ik kom,\nik los het op,\nik ga.",
+    "subheadline": "Ik help ondernemers met alles wat digitaal is. Van een kapotte website tot een complete IT-strategie, zonder poespas.",
+    "ctaPrimary": "Bekijk diensten",
+    "ctaSecondary": "Gratis IT Audit aanvragen",
     "scrollHint": "Ontdek meer"
   },
   "services": {
     "heading": "Mijn diensten",
-    "subheading": "Professionele ondersteuning afgestemd op uw behoeften",
+    "subheading": "Professionele ondersteuning afgestemd op jouw behoeften",
     "viewAll": "Alle diensten bekijken",
     "learnMore": "Meer informatie",
     "fromPrice": "Vanaf",
-    "featuredHeading": "Populaire diensten",
-    "featuredSubheading": "De meest gevraagde diensten door mijn klanten"
+    "featuredHeading": "Uitgelichte diensten",
+    "featuredSubheading": "De meest gevraagde diensten door ondernemers"
   },
   "process": {
-    "heading": "Hoe werkt het?",
-    "subheading": "Van kennismaking tot samenwerking — snel en zonder gedoe",
+    "heading": "Hoe ik werk",
+    "subheading": "Een simpel en helder proces zonder verrassingen",
     "steps": [
       {
-        "title": "Kennismakingsgesprek",
-        "description": "We bespreken uw situatie, behoeften en doelen in een gratis gesprek van 30 minuten."
+        "title": "Kennismaken",
+        "description": "Gratis kennismakingsgesprek of IT audit. We bespreken je bedrijf, de pijnpunten en doelen. Geen verplichtingen."
       },
       {
-        "title": "Voorstel op maat",
-        "description": "U ontvangt binnen 48 uur een helder voorstel met scope, aanpak en tarief."
+        "title": "Plan",
+        "description": "Je ontvangt een helder voorstel met scope, planning en tarief. Geen verborgen kosten of verrassingen."
       },
       {
-        "title": "Vliegende start",
-        "description": "Na akkoord start ik direct. Geen lange inwerkperiode — ik ben snel ingewerkt."
+        "title": "Uitvoeren",
+        "description": "Ik ga aan de slag. Je krijgt regelmatige updates. Geen black boxes, je weet altijd wat er gebeurt."
       },
       {
-        "title": "Continue samenwerking",
-        "description": "Wekelijkse updates, transparante communicatie en altijd bereikbaar via uw voorkeurskanaal."
+        "title": "Opleveren & Overdragen",
+        "description": "Schone overdracht inclusief documentatie. Jij bent eigenaar van alles. Geen vendor lock-in."
+      },
+      {
+        "title": "Nazorg",
+        "description": "Na oplevering ben ik bereikbaar voor vragen. Optioneel doorlopend beheer als je dat wilt."
       }
     ]
   },
   "whyMe": {
     "heading": "Waarom Techvast?",
-    "subheading": "Niet zomaar een assistent — een partner die uw taal spreekt",
+    "subheading": "Jouw technische houvast, zonder de overhead van een medewerker",
     "points": [
       {
-        "title": "IT-ervaring",
-        "description": "Ik ken de wereld van software, SaaS en digitale producten. Geen uitleg nodig."
+        "title": "Developer achtergrond",
+        "description": "5+ jaar ervaring met het bouwen van software. Ik snap techniek écht, niet alleen de buitenkant."
       },
       {
-        "title": "Meertalig",
-        "description": "Vloeiend in Nederlands, Engels en Duits. Ik communiceer met uw internationale klanten."
+        "title": "MKB focus",
+        "description": "Geen enterprise jargon. Ik spreek de taal van de ondernemer en zoek naar praktische, betaalbare oplossingen."
       },
       {
-        "title": "Flexibel",
-        "description": "Geen vaste contracten of lange verplichtingen. Schaal op of af naar behoefte."
+        "title": "Geen overhead",
+        "description": "Je betaalt niet voor een kantoorpand of managementlaag. Alleen voor de uren die daadwerkelijk waarde toevoegen."
       },
       {
-        "title": "Vertrouwelijk",
-        "description": "Volledige discretie gegarandeerd. NDA beschikbaar op verzoek."
+        "title": "Volledig transparant",
+        "description": "Geen langlopende contracten nodig, transparante prijzen en heldere communicatie over wat ik doe en waarom."
       }
     ]
   },
   "cta": {
-    "heading": "Klaar om tijd terug te winnen?",
-    "subheading": "Plan een gratis kennismakingsgesprek. Geen verplichtingen, wel concrete antwoorden.",
+    "heading": "Benieuwd wat ik voor jouw bedrijf kan betekenen?",
+    "subheading": "Plan een gratis kennismakingsgesprek of vraag direct een IT Audit aan.",
     "button": "Neem contact op"
   },
   "about": {
     "eyebrow": "Over mij",
     "heading": "Hallo, ik ben Lennard",
-    "intro": "Virtueel assistent met een achtergrond in IT",
-    "bio": "Na jarenlang te hebben gewerkt als managementassistente bij tech-bedrijven in Amsterdam en Rotterdam, besloot ik in 2023 voor mezelf te beginnen. Ik combineer mijn administratieve expertise met diepgaande kennis van de IT-sector om ondernemers écht te helpen.\n\nMijn klanten zijn veelal groeiende SaaS-bedrijven, digitale bureaus en IT-freelancers die een betrouwbare partner zoeken — iemand die snel begrijpt hoe hun bedrijf werkt en direct waarde toevoegt.",
+    "intro": "Fullstack developer die nu MKB ondernemers direct helpt met IT-vraagstukken",
+    "bio": "Na meer dan 5 jaar software te hebben gebouwd bij bedrijven als SDB Group en Four Digits, besloot ik mijn energie te richten op het direct helpen van ondernemers. Ik zag dat veel MKB'ers geen fulltime developer nodig hebben, maar iemand die zowel de techniek als hun bedrijfsvoering snapt.\n\nVeel bedrijven laten IT-problemen opstapelen, schuiven het af op de officemanager of betalen de hoofdprijs bij dure bureaus. Techvast vult dat gat: één deskundig aanspreekpunt voor alles wat digitaal is. Naast mijn technische achtergrond heb ik ook ervaring met theater en groepsfacilitatie, waardoor ik complexe zaken helder kan uitleggen zonder jargon.",
     "stats": [
-      { "value": "5+", "label": "jaar ervaring" },
-      { "value": "30+", "label": "tevreden klanten" },
+      { "value": "5+", "label": "jaar IT ervaring" },
+      { "value": "100%", "label": "transparant" },
       { "value": "3", "label": "talen" },
-      { "value": "100%", "label": "remote" }
+      { "value": "0", "label": "wurgcontracten" }
     ],
     "skills": {
-      "heading": "Tooling & expertise",
+      "heading": "Tech stack & tooling",
       "list": [
-        "Google Workspace",
-        "Microsoft 365",
-        "Notion",
-        "Jira & Confluence",
-        "Asana & Trello",
+        "Astro & Next.js",
+        "HTML, CSS & Vanilla JS",
+        "Python & FastAPI",
+        "Node.js",
+        "Zapier, Make & n8n",
+        "WordPress & Strapi",
+        "Google Workspace & M365",
+        "Docker & Linux",
         "HubSpot CRM",
-        "Intercom",
-        "Slack & Teams",
-        "Canva",
-        "Zapier"
+        "Git & GitHub Actions"
       ]
     }
   },
   "contact": {
     "eyebrow": "Contact",
     "heading": "Laten we kennismaken",
-    "subheading": "Vul het formulier in en ik neem binnen één werkdag contact met u op.",
+    "subheading": "Of je nu een specifieke vraag hebt, een project wilt bespreken, of gewoon wilt weten wat er mogelijk is: neem contact op. Het eerste gesprek is altijd gratis.",
     "unavailableHeading": "Momenteel niet beschikbaar",
-    "unavailableText": "Ik neem op dit moment geen nieuwe klanten aan. Stuur me een e-mail als u op de wachtlijst wilt.",
+    "unavailableText": "Ik neem op dit moment geen nieuwe klanten aan. Stuur me een e-mail als je op de wachtlijst wilt.",
     "emailLabel": "E-mail",
     "emailNote": "Stuur ook gerust een directe e-mail. Ik reageer binnen één werkdag.",
     "linkedInLabel": "LinkedIn",
@@ -122,17 +126,25 @@
       "emailPlaceholder": "jan@bedrijf.nl",
       "company": "Bedrijfsnaam",
       "companyPlaceholder": "Optioneel",
+      "reasonLabel": "Waarmee kan ik je helpen?",
+      "reasonOptions": {
+        "audit": "Gratis IT Audit aanvragen",
+        "service": "Vraag over een dienst",
+        "quote": "Offerte aanvragen",
+        "intro": "Kennismakingsgesprek plannen",
+        "other": "Anders"
+      },
       "message": "Bericht",
-      "messagePlaceholder": "Vertel me over uw situatie en wat u zoekt...",
+      "messagePlaceholder": "Vertel me over je situatie en wat je zoekt...",
       "submit": "Verstuur bericht",
       "submitting": "Verzenden...",
       "successHeading": "Bericht ontvangen!",
-      "successText": "Dank u wel. Ik neem binnen één werkdag contact met u op.",
+      "successText": "Dank je wel. Ik neem binnen één werkdag contact met je op.",
       "errorText": "Er is iets misgegaan. Probeer het opnieuw of stuur een e-mail."
     }
   },
   "footer": {
-    "tagline": "Professionele VA-diensten voor IT-bedrijven en startups.",
+    "tagline": "Jouw technische houvast. Flexibele IT-ondersteuning voor het MKB.",
     "links": {
       "services": "Diensten",
       "about": "Over mij",
@@ -143,20 +155,20 @@
   },
   "seo": {
     "home": {
-      "title": "Techvast — Freelance Virtueel Assistent voor IT-bedrijven",
-      "description": "Professionele VA-diensten voor IT-bedrijven en startups: administratie, projectbeheer, klantenservice en meer. Meertalig, flexibel en direct inzetbaar."
+      "title": "Techvast — Jouw technische houvast voor IT problemen",
+      "description": "Ik help MKB ondernemers met alles wat digitaal is. Van een kapotte website tot workflow automatisering en werkplekinrichting. Transparant en zonder poespas."
     },
     "services": {
       "title": "Diensten — Techvast",
-      "description": "Ontdek mijn VA-diensten: administratieve ondersteuning, projectbeheer, klantenservice, research en social media. Afgestemd op IT-bedrijven en startups."
+      "description": "Ontdek mijn IT-diensten: van een gratis IT Audit en website ontwikkeling tot systeembeheer en CRM implementatie. Praktische oplossingen voor het MKB."
     },
     "about": {
       "title": "Over mij — Techvast",
-      "description": "Leer mij kennen: freelance virtueel assistent met 5+ jaar ervaring in IT-omgevingen. Meertalig, betrouwbaar en altijd bereikbaar."
+      "description": "Leer Lennard kennen: voormalig fullstack developer met 5+ jaar ervaring, nu jouw freelance IT-partner. Ik combineer techniek met inzicht in jouw bedrijfsvoering."
     },
     "contact": {
       "title": "Contact — Techvast",
-      "description": "Neem contact op voor een gratis kennismakingsgesprek. Ik help u graag verder."
+      "description": "Neem contact op voor een gratis kennismakingsgesprek of vraag de gratis IT Audit aan. Ik help je graag verder met jouw digitale uitdagingen."
     }
   }
 }

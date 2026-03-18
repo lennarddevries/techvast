@@ -1,37 +1,34 @@
 {
-	"main": "@astrojs/cloudflare/entrypoints/server",
-	"name": "techvast",
-	"compatibility_date": "2026-03-18",
-	"compatibility_flags": [
-		"nodejs_compat",
-		"global_fetch_strictly_public"
-	],
-	"assets": {
-		"binding": "ASSETS",
-		"directory": "./dist/client"
-	},
-	"observability": {
-		"enabled": true
-	},
+  "main": "@astrojs/cloudflare/entrypoints/server",
+  "name": "techvast",
+  "compatibility_date": "2026-03-18",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "./dist/client",
+  },
+  "observability": {
+    "enabled": true,
+  },
 
-	"env": {
-		// Production: custom domain, no basic auth
-		"prd": {
-			"name": "techvast-prd",
-			"routes": [
-				{ "pattern": "techvast.nl/*", "custom_domain": true },
-				{ "pattern": "www.techvast.nl/*", "custom_domain": true }
-			]
-		},
-		// Acceptance: same worker, basic auth enabled via secret + var
-		"acc": {
-			"name": "techvast-acc",
-			"vars": {
-				"BASIC_AUTH_ENABLED": "true"
-			}
-			// Set secrets via CLI (not stored in this file):
-			// wrangler secret put BASIC_AUTH_USER --env acc
-			// wrangler secret put BASIC_AUTH_PASSWORD --env acc
-		}
-	}
+  "env": {
+    // Production: custom domain, no basic auth
+    "prd": {
+      "name": "techvast-prd",
+      "routes": [
+        { "pattern": "techvast.nl/*", "custom_domain": true },
+        { "pattern": "www.techvast.nl/*", "custom_domain": true },
+      ],
+    },
+    // Acceptance: same worker, basic auth enabled via secret + var
+    "acc": {
+      "name": "techvast-acc",
+      "vars": {
+        "BASIC_AUTH_ENABLED": "true",
+      },
+      // Set secrets via CLI (not stored in this file):
+      // wrangler secret put BASIC_AUTH_USER --env acc
+      // wrangler secret put BASIC_AUTH_PASSWORD --env acc
+    },
+  },
 }

@@ -11,9 +11,28 @@ const allServices = await getCollection("services", ({ id }) =>
   id.startsWith(`${locale}/`)
 )
 const services = allServices.sort((a, b) => a.data.order - b.data.order)
+
+const servicesJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  itemListElement: services.map((service, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    item: {
+      "@type": "Service",
+      name: service.data.title,
+      description: service.data.description,
+      provider: {
+        "@type": "Organization",
+        name: "Techvast",
+      },
+      url: `https://techvast.nl${locale === "nl" ? "" : `/${locale}`}/services/${service.data.serviceId}`,
+    },
+  })),
+}
 ---
 
-<Layout seoKey="services">
+<Layout seoKey="services" jsonLd={servicesJsonLd}>
   <!-- Header -->
   <section class="relative overflow-hidden px-6 pt-24 pb-16">
     <!-- Left accent stripe -->

@@ -4,7 +4,7 @@
   "nav": {
     "home": "Home",
     "services": "Services",
-    "about": "About",
+    "about": "About me",
     "contact": "Contact",
     "unavailableHint": "Currently unavailable for new projects"
   },
@@ -13,11 +13,11 @@
     "unavailable": "Unavailable"
   },
   "hero": {
-    "eyebrow": "Freelance Virtual Assistant",
-    "headline": "More time for\nwhat truly matters",
-    "subheadline": "I support IT companies and startups with administration, project management and customer service — so you can focus on growth.",
-    "ctaPrimary": "View my services",
-    "ctaSecondary": "Get in touch",
+    "eyebrow": "Your technical grip",
+    "headline": "I get in,\nfix it,\nget out.",
+    "subheadline": "I help business owners with everything digital. From a broken website to a complete IT strategy, without the fuss.",
+    "ctaPrimary": "View services",
+    "ctaSecondary": "Request free IT Audit",
     "scrollHint": "Discover more"
   },
   "services": {
@@ -26,137 +26,149 @@
     "viewAll": "View all services",
     "learnMore": "Learn more",
     "fromPrice": "From",
-    "featuredHeading": "Popular services",
-    "featuredSubheading": "The most requested services by my clients"
+    "featuredHeading": "Featured services",
+    "featuredSubheading": "The most requested services by business owners"
   },
   "process": {
-    "heading": "How does it work?",
-    "subheading": "From introduction to collaboration — fast and without hassle",
+    "heading": "How I work",
+    "subheading": "A simple and clear process with no surprises",
     "steps": [
       {
-        "title": "Introductory call",
-        "description": "We discuss your situation, needs and goals in a free 30-minute call."
+        "title": "Meet & Greet",
+        "description": "Free discovery call or IT audit. We discuss your business, pain points, and goals. No obligations."
       },
       {
-        "title": "Tailored proposal",
-        "description": "You receive a clear proposal with scope, approach and rate within 48 hours."
+        "title": "Plan",
+        "description": "You receive a clear proposal with scope, timeline, and pricing. No hidden costs or surprises."
       },
       {
-        "title": "Flying start",
-        "description": "After approval I start immediately. No lengthy onboarding — I get up to speed fast."
+        "title": "Execute",
+        "description": "I get to work. You receive regular updates. No black boxes, you always know what is happening."
       },
       {
-        "title": "Ongoing collaboration",
-        "description": "Weekly updates, transparent communication and always reachable via your preferred channel."
+        "title": "Deliver & Handover",
+        "description": "Clean handover including documentation. You own everything. No vendor lock-in."
+      },
+      {
+        "title": "Aftercare",
+        "description": "After delivery, I remain available for questions. Optional ongoing management if desired."
       }
     ]
   },
   "whyMe": {
     "heading": "Why Techvast?",
-    "subheading": "Not just an assistant — a partner who speaks your language",
+    "subheading": "Your technical grip, without the overhead of an employee",
     "points": [
       {
-        "title": "IT expertise",
-        "description": "I know the world of software, SaaS and digital products. No explanation needed."
+        "title": "Developer background",
+        "description": "5+ years of experience building software. I truly understand technology, not just the surface level."
       },
       {
-        "title": "Multilingual",
-        "description": "Fluent in Dutch, English and German. I communicate with your international clients."
+        "title": "SME focus",
+        "description": "No enterprise jargon. I speak the language of entrepreneurs and look for practical, affordable solutions."
       },
       {
-        "title": "Flexible",
-        "description": "No fixed contracts or long commitments. Scale up or down as needed."
+        "title": "No overhead",
+        "description": "You don't pay for office space or management layers. Only for the hours that actually add value."
       },
       {
-        "title": "Confidential",
-        "description": "Full discretion guaranteed. NDA available on request."
+        "title": "Fully transparent",
+        "description": "No long-term contracts required, transparent pricing, and clear communication about what I do and why."
       }
     ]
   },
   "cta": {
-    "heading": "Ready to reclaim your time?",
-    "subheading": "Book a free introductory call. No obligations, just concrete answers.",
+    "heading": "Curious what I can do for your business?",
+    "subheading": "Schedule a free discovery call or request an IT Audit right away.",
     "button": "Get in touch"
   },
   "about": {
     "eyebrow": "About me",
     "heading": "Hi, I'm Lennard",
-    "intro": "Virtual assistant with a background in IT",
-    "bio": "After years of working as an executive assistant at tech companies in Amsterdam and Rotterdam, I decided to go independent in 2023. I combine my administrative expertise with deep knowledge of the IT sector to truly help entrepreneurs.\n\nMy clients are typically growing SaaS companies, digital agencies and IT freelancers looking for a reliable partner — someone who quickly understands how their business works and adds value from day one.",
+    "intro": "Fullstack developer now directly helping SME owners with IT challenges",
+    "bio": "After spending over 5 years building software at companies like SDB Group and Four Digits, I decided to focus my energy on helping business owners directly. I realized that many SMEs don't need a full-time developer, but someone who understands both technology and their business operations.\n\nMany businesses let IT problems pile up, offload them to the office manager, or pay top dollar at expensive agencies. Techvast fills that gap: one expert point of contact for everything digital. Alongside my technical background, I also have experience in theater and group facilitation, allowing me to explain complex matters clearly without the jargon.",
     "stats": [
-      { "value": "5+", "label": "years experience" },
-      { "value": "30+", "label": "happy clients" },
+      { "value": "5+", "label": "years IT experience" },
+      { "value": "100%", "label": "transparent" },
       { "value": "3", "label": "languages" },
-      { "value": "100%", "label": "remote" }
+      { "value": "0", "label": "vendor lock-ins" }
     ],
     "skills": {
-      "heading": "Tooling & expertise",
+      "heading": "Tech stack & tooling",
       "list": [
-        "Google Workspace",
-        "Microsoft 365",
-        "Notion",
-        "Jira & Confluence",
-        "Asana & Trello",
+        "Astro & Next.js",
+        "HTML, CSS & Vanilla JS",
+        "Python & FastAPI",
+        "Node.js",
+        "Zapier, Make & n8n",
+        "WordPress & Strapi",
+        "Google Workspace & M365",
+        "Docker & Linux",
         "HubSpot CRM",
-        "Intercom",
-        "Slack & Teams",
-        "Canva",
-        "Zapier"
+        "Git & GitHub Actions"
       ]
     }
   },
   "contact": {
     "eyebrow": "Contact",
-    "heading": "Let's get acquainted",
-    "subheading": "Fill in the form and I'll get back to you within one business day.",
+    "heading": "Let's connect",
+    "subheading": "Whether you have a specific question, want to discuss a project, or just want to know what's possible: get in touch. The first consultation is always free.",
     "unavailableHeading": "Currently unavailable",
-    "unavailableText": "I'm not accepting new clients at the moment. Send me an email if you'd like to join the waiting list.",
-    "emailLabel": "E-mail",
-    "emailNote": "Or send a direct email. I respond within one business day.",
+    "unavailableText": "I am not taking on new clients at the moment. Send me an email if you want to join the waitlist.",
+    "emailLabel": "Email",
+    "emailNote": "Feel free to send a direct email. I respond within one business day.",
     "linkedInLabel": "LinkedIn",
     "viewProfile": "View profile",
     "form": {
       "name": "Name",
-      "namePlaceholder": "Jane Smith",
+      "namePlaceholder": "John Doe",
       "email": "Email address",
-      "emailPlaceholder": "jane@company.com",
+      "emailPlaceholder": "john@company.com",
       "company": "Company name",
       "companyPlaceholder": "Optional",
+      "reasonLabel": "How can I help you?",
+      "reasonOptions": {
+        "audit": "Request free IT Audit",
+        "service": "Question about a service",
+        "quote": "Request a quote",
+        "intro": "Schedule a discovery call",
+        "other": "Other"
+      },
       "message": "Message",
       "messagePlaceholder": "Tell me about your situation and what you're looking for...",
       "submit": "Send message",
       "submitting": "Sending...",
       "successHeading": "Message received!",
-      "successText": "Thank you. I'll get back to you within one business day.",
+      "successText": "Thank you. I will contact you within one business day.",
       "errorText": "Something went wrong. Please try again or send an email."
     }
   },
   "footer": {
-    "tagline": "Professional VA services for IT companies and startups.",
+    "tagline": "Your technical grip. Flexible IT support for small businesses.",
     "links": {
       "services": "Services",
-      "about": "About",
+      "about": "About me",
       "contact": "Contact",
-      "privacy": "Privacy policy"
+      "privacy": "Privacy Policy"
     },
     "rights": "All rights reserved."
   },
   "seo": {
     "home": {
-      "title": "Techvast — Freelance Virtual Assistant for IT companies",
-      "description": "Professional VA services for IT companies and startups: administration, project management, customer service and more. Multilingual, flexible and ready to start."
+      "title": "Techvast — Your technical grip for IT problems",
+      "description": "I help SME owners with everything digital. From a broken website to workflow automation and workspace setup. Transparent and without the fuss."
     },
     "services": {
       "title": "Services — Techvast",
-      "description": "Discover my VA services: administrative support, project management, customer service, research and social media. Tailored for IT companies and startups."
+      "description": "Discover my IT services: from a free IT Audit and website development to system administration and CRM implementation. Practical solutions for SMEs."
     },
     "about": {
-      "title": "About — Techvast",
-      "description": "Get to know me: freelance virtual assistant with 5+ years of experience in IT environments. Multilingual, reliable and always available."
+      "title": "About me — Techvast",
+      "description": "Get to know Lennard: former fullstack developer with 5+ years of experience, now your freelance IT partner. I combine technology with insight into your business."
     },
     "contact": {
       "title": "Contact — Techvast",
-      "description": "Get in touch for a free introductory call. I'm happy to help."
+      "description": "Get in touch for a free discovery call or request the free IT Audit. I'm ready to help you with your digital challenges."
     }
   }
 }

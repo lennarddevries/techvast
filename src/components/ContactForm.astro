@@ -7,6 +7,8 @@ interface Props {
     emailPlaceholder: string
     company: string
     companyPlaceholder: string
+    reasonLabel: string
+    reasonOptions: Record<string, string>
     message: string
     messagePlaceholder: string
     submit: string
@@ -110,6 +112,28 @@ const TURNSTILE_SITEKEY =
         autocomplete="organization"
         class="flex h-9 w-full rounded-lg border border-input bg-transparent px-3 py-1 text-sm text-foreground shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground/60 focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50"
       />
+    </div>
+
+    <!-- Reason Dropdown -->
+    <div class="flex flex-col gap-1.5">
+      <label
+        for="reason"
+        class="text-sm leading-none font-medium text-foreground"
+        >{t.reasonLabel}</label
+      >
+      <select
+        id="reason"
+        name="reason"
+        required
+        class="flex h-9 w-full rounded-lg border border-input bg-transparent px-3 py-1 text-sm text-foreground shadow-sm transition-colors focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 [&>option]:bg-background [&>option]:text-foreground"
+      >
+        <option value="" disabled selected hidden>Kies een optie...</option>
+        {
+          Object.entries(t.reasonOptions).map(([key, value]) => (
+            <option value={key}>{value}</option>
+          ))
+        }
+      </select>
     </div>
 
     <!-- Message -->
@@ -261,6 +285,8 @@ const TURNSTILE_SITEKEY =
         email: (this.form.elements.namedItem("email") as HTMLInputElement)
           .value,
         company: (this.form.elements.namedItem("company") as HTMLInputElement)
+          .value,
+        reason: (this.form.elements.namedItem("reason") as HTMLSelectElement)
           .value,
         message: (
           this.form.elements.namedItem("message") as HTMLTextAreaElement

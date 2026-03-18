@@ -12,12 +12,21 @@ interface Props {
   noindex?: boolean
   /** Pass the translated title/description keys from seo.* */
   seoKey?: "home" | "services" | "about" | "contact"
+  /** Structured data */
+  jsonLd?: Record<string, unknown> | null
 }
 
 const locale = (Astro.currentLocale ?? "nl") as Locale
 const t = useTranslations(locale)
 
-const { title, description, image, noindex = false, seoKey } = Astro.props
+const {
+  title,
+  description,
+  image,
+  noindex = false,
+  seoKey,
+  jsonLd: providedJsonLd,
+} = Astro.props
 
 const resolvedTitle = title ?? (seoKey ? t.seo[seoKey].title : "Techvast")
 const resolvedDesc =
@@ -50,8 +59,8 @@ const alternates = [
 const [availData] = await getCollection("availability")
 const isAvailable = availData?.data?.available ?? true
 
-// JSON-LD structured data
-const jsonLd = {
+// JSON-LD structured data default
+const defaultJsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Techvast",
@@ -66,6 +75,9 @@ const jsonLd = {
   sameAs: ["https://linkedin.com/in/techvast"],
   priceRange: "€€",
 }
+
+const finalJsonLd =
+  providedJsonLd !== undefined ? providedJsonLd : defaultJsonLd
 ---
 
 <html lang={locale} class="scroll-smooth">
@@ -117,7 +129,14 @@ const jsonLd = {
     />
 
     <!-- JSON-LD -->
-    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    {
+      finalJsonLd && (
+        <script
+          type="application/ld+json"
+          set:html={JSON.stringify(finalJsonLd)}
+        />
+      )
+    }
   </head>
   <body class="flex min-h-screen flex-col">
     <!-- Scroll progress bar -->

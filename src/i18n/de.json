@@ -3,160 +3,172 @@
   "localeName": "Deutsch",
   "nav": {
     "home": "Startseite",
-    "services": "Leistungen",
+    "services": "Dienstleistungen",
     "about": "Über mich",
     "contact": "Kontakt",
-    "unavailableHint": "Derzeit nicht verfügbar für neue Projekte"
+    "unavailableHint": "Derzeit für neue Projekte nicht verfügbar"
   },
   "availability": {
     "available": "Verfügbar",
     "unavailable": "Nicht verfügbar"
   },
   "hero": {
-    "eyebrow": "Freelance Virtueller Assistent",
-    "headline": "Mehr Zeit für\ndas Wesentliche",
-    "subheadline": "Ich unterstütze IT-Unternehmen und Startups mit Verwaltung, Projektmanagement und Kundenservice — damit Sie sich auf Wachstum konzentrieren können.",
-    "ctaPrimary": "Meine Leistungen ansehen",
-    "ctaSecondary": "Kontakt aufnehmen",
+    "eyebrow": "Dein technischer Halt",
+    "headline": "Ich komme,\nbehebe es,\ngehe.",
+    "subheadline": "Ich helfe Unternehmern bei allem, was digital ist. Von einer defekten Website bis hin zu einer kompletten IT-Strategie, ganz ohne Schnickschnack.",
+    "ctaPrimary": "Dienste ansehen",
+    "ctaSecondary": "Kostenloses IT-Audit anfordern",
     "scrollHint": "Mehr entdecken"
   },
   "services": {
-    "heading": "Meine Leistungen",
-    "subheading": "Professionelle Unterstützung, abgestimmt auf Ihre Bedürfnisse",
-    "viewAll": "Alle Leistungen ansehen",
+    "heading": "Meine Dienstleistungen",
+    "subheading": "Professionelle Unterstützung, zugeschnitten auf deine Bedürfnisse",
+    "viewAll": "Alle Dienste ansehen",
     "learnMore": "Mehr erfahren",
     "fromPrice": "Ab",
-    "featuredHeading": "Beliebte Leistungen",
-    "featuredSubheading": "Die meistgefragten Leistungen meiner Kunden"
+    "featuredHeading": "Beliebte Dienste",
+    "featuredSubheading": "Die am häufigsten nachgefragten Dienstleistungen"
   },
   "process": {
-    "heading": "Wie funktioniert es?",
-    "subheading": "Von der Vorstellung bis zur Zusammenarbeit — schnell und unkompliziert",
+    "heading": "Wie ich arbeite",
+    "subheading": "Ein einfacher und klarer Prozess ohne Überraschungen",
     "steps": [
       {
-        "title": "Kennenlerngespräch",
-        "description": "Wir besprechen Ihre Situation, Bedürfnisse und Ziele in einem kostenlosen 30-minütigen Gespräch."
+        "title": "Kennenlernen",
+        "description": "Kostenloses Kennenlerngespräch oder IT-Audit. Wir besprechen dein Unternehmen, die Schmerzpunkte und Ziele. Unverbindlich."
       },
       {
-        "title": "Maßgeschneidertes Angebot",
-        "description": "Sie erhalten innerhalb von 48 Stunden ein klares Angebot mit Umfang, Vorgehensweise und Preis."
+        "title": "Planen",
+        "description": "Du erhältst ein klares Angebot mit Umfang, Zeitplan und Preis. Keine versteckten Kosten oder Überraschungen."
       },
       {
-        "title": "Fliegender Start",
-        "description": "Nach der Freigabe starte ich sofort. Keine lange Einarbeitung — ich komme schnell in Fahrt."
+        "title": "Ausführen",
+        "description": "Ich mache mich an die Arbeit. Du erhältst regelmäßige Updates. Keine Blackboxen, du weißt immer, was passiert."
       },
       {
-        "title": "Laufende Zusammenarbeit",
-        "description": "Wöchentliche Updates, transparente Kommunikation und immer erreichbar über Ihren bevorzugten Kanal."
+        "title": "Liefern & Übergeben",
+        "description": "Saubere Übergabe inklusive Dokumentation. Dir gehört alles. Kein Vendor-Lock-in."
+      },
+      {
+        "title": "Nachsorge",
+        "description": "Nach der Lieferung bleibe ich für Fragen erreichbar. Optionales laufendes Management, falls gewünscht."
       }
     ]
   },
   "whyMe": {
     "heading": "Warum Techvast?",
-    "subheading": "Nicht nur ein Assistent — ein Partner, der Ihre Sprache spricht",
+    "subheading": "Dein technischer Halt, ohne den Overhead eines Mitarbeiters",
     "points": [
       {
-        "title": "IT-Erfahrung",
-        "description": "Ich kenne die Welt von Software, SaaS und digitalen Produkten. Keine Erklärung notwendig."
+        "title": "Entwickler-Hintergrund",
+        "description": "5+ Jahre Erfahrung in der Softwareentwicklung. Ich verstehe Technologie wirklich, nicht nur oberflächlich."
       },
       {
-        "title": "Mehrsprachig",
-        "description": "Fließend in Niederländisch, Englisch und Deutsch. Ich kommuniziere mit Ihren internationalen Kunden."
+        "title": "Fokus auf KMU",
+        "description": "Kein Enterprise-Jargon. Ich spreche die Sprache von Unternehmern und suche nach praktischen, erschwinglichen Lösungen."
       },
       {
-        "title": "Flexibel",
-        "description": "Keine Festverträge oder langen Verpflichtungen. Skalieren Sie nach Bedarf."
+        "title": "Kein Overhead",
+        "description": "Du zahlst nicht für Büroräume oder Managementebenen. Nur für die Stunden, die tatsächlich Wert schaffen."
       },
       {
-        "title": "Vertraulich",
-        "description": "Volle Diskretion garantiert. NDA auf Anfrage verfügbar."
+        "title": "Vollständig transparent",
+        "description": "Keine langfristigen Verträge erforderlich, transparente Preise und klare Kommunikation darüber, was ich tue und warum."
       }
     ]
   },
   "cta": {
-    "heading": "Bereit, Zeit zurückzugewinnen?",
-    "subheading": "Buchen Sie ein kostenloses Kennenlerngespräch. Keine Verpflichtungen, nur konkrete Antworten.",
+    "heading": "Neugierig, was ich für dein Unternehmen tun kann?",
+    "subheading": "Vereinbare ein kostenloses Kennenlerngespräch oder fordere direkt ein IT-Audit an.",
     "button": "Kontakt aufnehmen"
   },
   "about": {
     "eyebrow": "Über mich",
     "heading": "Hallo, ich bin Lennard",
-    "intro": "Virtueller Assistent mit IT-Hintergrund",
-    "bio": "Nach jahrelanger Arbeit als Managementassistentin bei Tech-Unternehmen in Amsterdam und Rotterdam entschied ich mich 2023, selbstständig zu werden. Ich kombiniere meine administrative Expertise mit tiefem Wissen über die IT-Branche, um Unternehmern wirklich zu helfen.\n\nMeine Kunden sind typischerweise wachsende SaaS-Unternehmen, digitale Agenturen und IT-Freelancer, die einen zuverlässigen Partner suchen — jemanden, der schnell versteht, wie ihr Unternehmen funktioniert, und von Anfang an Mehrwert schafft.",
+    "intro": "Fullstack-Entwickler, der jetzt KMU-Inhabern direkt bei IT-Herausforderungen hilft",
+    "bio": "Nachdem ich über 5 Jahre lang Software bei Unternehmen wie der SDB Group und Four Digits entwickelt hatte, beschloss ich, meine Energie darauf zu konzentrieren, Unternehmern direkt zu helfen. Ich habe erkannt, dass viele KMUs keinen Vollzeit-Entwickler brauchen, sondern jemanden, der sowohl Technologie als auch ihre Geschäftsabläufe versteht.\n\nViele Unternehmen lassen IT-Probleme sich anhäufen, lagern sie an den Büromanager aus oder zahlen Höchstpreise bei teuren Agenturen. Techvast füllt diese Lücke: ein kompetenter Ansprechpartner für alles Digitale. Neben meinem technischen Hintergrund habe ich auch Erfahrung im Theater und in der Gruppenmoderation, wodurch ich komplexe Sachverhalte klar und ohne Fachjargon erklären kann.",
     "stats": [
-      { "value": "5+", "label": "Jahre Erfahrung" },
-      { "value": "30+", "label": "zufriedene Kunden" },
+      { "value": "5+", "label": "Jahre IT-Erfahrung" },
+      { "value": "100%", "label": "transparent" },
       { "value": "3", "label": "Sprachen" },
-      { "value": "100%", "label": "remote" }
+      { "value": "0", "label": "Knebelverträge" }
     ],
     "skills": {
-      "heading": "Tools & Expertise",
+      "heading": "Tech-Stack & Tooling",
       "list": [
-        "Google Workspace",
-        "Microsoft 365",
-        "Notion",
-        "Jira & Confluence",
-        "Asana & Trello",
+        "Astro & Next.js",
+        "HTML, CSS & Vanilla JS",
+        "Python & FastAPI",
+        "Node.js",
+        "Zapier, Make & n8n",
+        "WordPress & Strapi",
+        "Google Workspace & M365",
+        "Docker & Linux",
         "HubSpot CRM",
-        "Intercom",
-        "Slack & Teams",
-        "Canva",
-        "Zapier"
+        "Git & GitHub Actions"
       ]
     }
   },
   "contact": {
     "eyebrow": "Kontakt",
-    "heading": "Lernen wir uns kennen",
-    "subheading": "Füllen Sie das Formular aus und ich melde mich innerhalb eines Werktages.",
+    "heading": "Lass uns austauschen",
+    "subheading": "Egal ob du eine bestimmte Frage hast, ein Projekt besprechen möchtest oder einfach wissen willst, was möglich ist: melde dich. Das erste Gespräch ist immer kostenlos.",
     "unavailableHeading": "Derzeit nicht verfügbar",
-    "unavailableText": "Ich nehme derzeit keine neuen Kunden an. Schreiben Sie mir eine E-Mail, wenn Sie auf die Warteliste möchten.",
+    "unavailableText": "Ich nehme im Moment keine neuen Kunden an. Sende mir eine E-Mail, wenn du auf die Warteliste möchtest.",
     "emailLabel": "E-Mail",
-    "emailNote": "Oder schreiben Sie uns direkt eine E-Mail. Ich antworte innerhalb eines Werktages.",
+    "emailNote": "Sende mir auch gerne eine direkte E-Mail. Ich antworte innerhalb eines Werktages.",
     "linkedInLabel": "LinkedIn",
     "viewProfile": "Profil ansehen",
     "form": {
       "name": "Name",
       "namePlaceholder": "Max Mustermann",
       "email": "E-Mail-Adresse",
-      "emailPlaceholder": "max@unternehmen.de",
-      "company": "Unternehmensname",
+      "emailPlaceholder": "max@firma.de",
+      "company": "Firmenname",
       "companyPlaceholder": "Optional",
+      "reasonLabel": "Wie kann ich dir helfen?",
+      "reasonOptions": {
+        "audit": "Kostenloses IT-Audit anfordern",
+        "service": "Frage zu einer Dienstleistung",
+        "quote": "Angebot anfordern",
+        "intro": "Kennenlerngespräch planen",
+        "other": "Sonstiges"
+      },
       "message": "Nachricht",
-      "messagePlaceholder": "Erzählen Sie mir von Ihrer Situation und was Sie suchen...",
+      "messagePlaceholder": "Erzähle mir von deiner Situation und wonach du suchst...",
       "submit": "Nachricht senden",
-      "submitting": "Senden...",
+      "submitting": "Wird gesendet...",
       "successHeading": "Nachricht erhalten!",
-      "successText": "Vielen Dank. Ich melde mich innerhalb eines Werktages bei Ihnen.",
-      "errorText": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder senden Sie eine E-Mail."
+      "successText": "Vielen Dank. Ich werde mich innerhalb eines Werktages bei dir melden.",
+      "errorText": "Etwas ist schiefgelaufen. Bitte versuche es erneut oder sende eine E-Mail."
     }
   },
   "footer": {
-    "tagline": "Professionelle VA-Dienste für IT-Unternehmen und Startups.",
+    "tagline": "Dein technischer Halt. Flexibler IT-Support für kleine Unternehmen.",
     "links": {
-      "services": "Leistungen",
+      "services": "Dienstleistungen",
       "about": "Über mich",
       "contact": "Kontakt",
-      "privacy": "Datenschutz"
+      "privacy": "Datenschutzerklärung"
     },
     "rights": "Alle Rechte vorbehalten."
   },
   "seo": {
     "home": {
-      "title": "Techvast — Freelance Virtueller Assistent für IT-Unternehmen",
-      "description": "Professionelle VA-Dienste für IT-Unternehmen und Startups: Verwaltung, Projektmanagement, Kundenservice und mehr. Mehrsprachig, flexibel und sofort einsatzbereit."
+      "title": "Techvast — Dein technischer Halt für IT-Probleme",
+      "description": "Ich helfe KMU-Inhabern bei allem, was digital ist. Von einer defekten Website bis hin zu Workflow-Automatisierung und Arbeitsplatzeinrichtung. Transparent und ohne Schnickschnack."
     },
     "services": {
-      "title": "Leistungen — Techvast",
-      "description": "Entdecken Sie meine VA-Leistungen: Verwaltungsunterstützung, Projektmanagement, Kundenservice, Recherche und Social Media. Für IT-Unternehmen und Startups."
+      "title": "Dienstleistungen — Techvast",
+      "description": "Entdecke meine IT-Dienstleistungen: von einem kostenlosen IT-Audit und Website-Entwicklung bis hin zu Systemadministration und CRM-Implementierung. Praktische Lösungen für KMUs."
     },
     "about": {
       "title": "Über mich — Techvast",
-      "description": "Lernen Sie mich kennen: Freelance virtueller Assistent mit 5+ Jahren Erfahrung in IT-Umgebungen. Mehrsprachig, zuverlässig und immer erreichbar."
+      "description": "Lerne Lennard kennen: ehemaliger Fullstack-Entwickler mit 5+ Jahren Erfahrung, jetzt dein freiberuflicher IT-Partner. Ich verbinde Technologie mit Einblick in dein Unternehmen."
     },
     "contact": {
       "title": "Kontakt — Techvast",
-      "description": "Kontaktieren Sie mich für ein kostenloses Kennenlerngespräch. Ich helfe Ihnen gerne weiter."
+      "description": "Nimm Kontakt auf für ein kostenloses Kennenlerngespräch oder fordere das kostenlose IT-Audit an. Ich helfe dir gerne bei deinen digitalen Herausforderungen."
     }
   }
 }

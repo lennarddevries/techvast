@@ -5,9 +5,22 @@ import { useTranslations, type Locale } from "@/i18n/utils"
 const locale = (Astro.currentLocale ?? "nl") as Locale
 const t = useTranslations(locale)
 const a = t.about
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Lennard De Vries",
+  jobTitle: "Freelance Virtual Assistant & IT Consultant",
+  url: "https://techvast.nl/about",
+  sameAs: ["https://linkedin.com/in/techvast"],
+  worksFor: {
+    "@type": "Organization",
+    name: "Techvast",
+  },
+}
 ---
 
-<Layout seoKey="about">
+<Layout seoKey="about" jsonLd={personJsonLd}>
   <!-- Header: text left, photo right -->
   <section class="relative overflow-hidden px-6 pt-24 pb-16">
     <!-- Left accent stripe -->
