@@ -1,0 +1,9 @@
+# ─── Availability Configuration ───────────────────────────────────────────────
+# Set `available` to false to hide the contact form and show an unavailability notice.
+# Update the messages per locale to communicate your status to visitors.
+
+- id: status
+  available: true
+  messageNl: Beschikbaar voor nieuwe projecten — neem gerust contact op!
+  messageEn: Available for new projects — feel free to get in touch!
+  messageDe: Verfügbar für neue Projekte — melde dich gerne!

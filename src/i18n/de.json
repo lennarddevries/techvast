@@ -1,0 +1,158 @@
+{
+  "locale": "de",
+  "localeName": "Deutsch",
+  "nav": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "about": "Über mich",
+    "contact": "Kontakt",
+    "unavailableHint": "Derzeit nicht verfügbar für neue Projekte"
+  },
+  "availability": {
+    "available": "Verfügbar",
+    "unavailable": "Nicht verfügbar"
+  },
+  "hero": {
+    "eyebrow": "Freelance Virtueller Assistent",
+    "headline": "Mehr Zeit für\ndas Wesentliche",
+    "subheadline": "Ich unterstütze IT-Unternehmen und Startups mit Verwaltung, Projektmanagement und Kundenservice — damit Sie sich auf Wachstum konzentrieren können.",
+    "ctaPrimary": "Meine Leistungen ansehen",
+    "ctaSecondary": "Kontakt aufnehmen",
+    "scrollHint": "Mehr entdecken"
+  },
+  "services": {
+    "heading": "Meine Leistungen",
+    "subheading": "Professionelle Unterstützung, abgestimmt auf Ihre Bedürfnisse",
+    "viewAll": "Alle Leistungen ansehen",
+    "learnMore": "Mehr erfahren",
+    "fromPrice": "Ab",
+    "featuredHeading": "Beliebte Leistungen",
+    "featuredSubheading": "Die meistgefragten Leistungen meiner Kunden"
+  },
+  "process": {
+    "heading": "Wie funktioniert es?",
+    "subheading": "Von der Vorstellung bis zur Zusammenarbeit — schnell und unkompliziert",
+    "steps": [
+      {
+        "title": "Kennenlerngespräch",
+        "description": "Wir besprechen Ihre Situation, Bedürfnisse und Ziele in einem kostenlosen 30-minütigen Gespräch."
+      },
+      {
+        "title": "Maßgeschneidertes Angebot",
+        "description": "Sie erhalten innerhalb von 48 Stunden ein klares Angebot mit Umfang, Vorgehensweise und Preis."
+      },
+      {
+        "title": "Fliegender Start",
+        "description": "Nach der Freigabe starte ich sofort. Keine lange Einarbeitung — ich komme schnell in Fahrt."
+      },
+      {
+        "title": "Laufende Zusammenarbeit",
+        "description": "Wöchentliche Updates, transparente Kommunikation und immer erreichbar über Ihren bevorzugten Kanal."
+      }
+    ]
+  },
+  "whyMe": {
+    "heading": "Warum Techvast?",
+    "subheading": "Nicht nur ein Assistent — ein Partner, der Ihre Sprache spricht",
+    "points": [
+      {
+        "title": "IT-Erfahrung",
+        "description": "Ich kenne die Welt von Software, SaaS und digitalen Produkten. Keine Erklärung notwendig."
+      },
+      {
+        "title": "Mehrsprachig",
+        "description": "Fließend in Niederländisch, Englisch und Deutsch. Ich kommuniziere mit Ihren internationalen Kunden."
+      },
+      {
+        "title": "Flexibel",
+        "description": "Keine Festverträge oder langen Verpflichtungen. Skalieren Sie nach Bedarf."
+      },
+      {
+        "title": "Vertraulich",
+        "description": "Volle Diskretion garantiert. NDA auf Anfrage verfügbar."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Bereit, Zeit zurückzugewinnen?",
+    "subheading": "Buchen Sie ein kostenloses Kennenlerngespräch. Keine Verpflichtungen, nur konkrete Antworten.",
+    "button": "Kontakt aufnehmen"
+  },
+  "about": {
+    "eyebrow": "Über mich",
+    "heading": "Hallo, ich bin Lennard",
+    "intro": "Virtueller Assistent mit IT-Hintergrund",
+    "bio": "Nach jahrelanger Arbeit als Managementassistentin bei Tech-Unternehmen in Amsterdam und Rotterdam entschied ich mich 2023, selbstständig zu werden. Ich kombiniere meine administrative Expertise mit tiefem Wissen über die IT-Branche, um Unternehmern wirklich zu helfen.\n\nMeine Kunden sind typischerweise wachsende SaaS-Unternehmen, digitale Agenturen und IT-Freelancer, die einen zuverlässigen Partner suchen — jemanden, der schnell versteht, wie ihr Unternehmen funktioniert, und von Anfang an Mehrwert schafft.",
+    "stats": [
+      { "value": "5+", "label": "Jahre Erfahrung" },
+      { "value": "30+", "label": "zufriedene Kunden" },
+      { "value": "3", "label": "Sprachen" },
+      { "value": "100%", "label": "remote" }
+    ],
+    "skills": {
+      "heading": "Tools & Expertise",
+      "list": [
+        "Google Workspace",
+        "Microsoft 365",
+        "Notion",
+        "Jira & Confluence",
+        "Asana & Trello",
+        "HubSpot CRM",
+        "Intercom",
+        "Slack & Teams",
+        "Canva",
+        "Zapier"
+      ]
+    }
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "heading": "Lernen wir uns kennen",
+    "subheading": "Füllen Sie das Formular aus und ich melde mich innerhalb eines Werktages.",
+    "unavailableHeading": "Derzeit nicht verfügbar",
+    "unavailableText": "Ich nehme derzeit keine neuen Kunden an. Schreiben Sie mir eine E-Mail, wenn Sie auf die Warteliste möchten.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Max Mustermann",
+      "email": "E-Mail-Adresse",
+      "emailPlaceholder": "max@unternehmen.de",
+      "company": "Unternehmensname",
+      "companyPlaceholder": "Optional",
+      "message": "Nachricht",
+      "messagePlaceholder": "Erzählen Sie mir von Ihrer Situation und was Sie suchen...",
+      "submit": "Nachricht senden",
+      "submitting": "Senden...",
+      "successHeading": "Nachricht erhalten!",
+      "successText": "Vielen Dank. Ich melde mich innerhalb eines Werktages bei Ihnen.",
+      "errorText": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder senden Sie eine E-Mail."
+    }
+  },
+  "footer": {
+    "tagline": "Professionelle VA-Dienste für IT-Unternehmen und Startups.",
+    "links": {
+      "services": "Leistungen",
+      "about": "Über mich",
+      "contact": "Kontakt",
+      "privacy": "Datenschutz"
+    },
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "seo": {
+    "home": {
+      "title": "Techvast — Freelance Virtueller Assistent für IT-Unternehmen",
+      "description": "Professionelle VA-Dienste für IT-Unternehmen und Startups: Verwaltung, Projektmanagement, Kundenservice und mehr. Mehrsprachig, flexibel und sofort einsatzbereit."
+    },
+    "services": {
+      "title": "Leistungen — Techvast",
+      "description": "Entdecken Sie meine VA-Leistungen: Verwaltungsunterstützung, Projektmanagement, Kundenservice, Recherche und Social Media. Für IT-Unternehmen und Startups."
+    },
+    "about": {
+      "title": "Über mich — Techvast",
+      "description": "Lernen Sie mich kennen: Freelance virtueller Assistent mit 5+ Jahren Erfahrung in IT-Umgebungen. Mehrsprachig, zuverlässig und immer erreichbar."
+    },
+    "contact": {
+      "title": "Kontakt — Techvast",
+      "description": "Kontaktieren Sie mich für ein kostenloses Kennenlerngespräch. Ich helfe Ihnen gerne weiter."
+    }
+  }
+}

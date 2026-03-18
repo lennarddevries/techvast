@@ -1,0 +1,158 @@
+{
+  "locale": "nl",
+  "localeName": "Nederlands",
+  "nav": {
+    "home": "Home",
+    "services": "Diensten",
+    "about": "Over mij",
+    "contact": "Contact",
+    "unavailableHint": "Momenteel niet beschikbaar voor nieuwe projecten"
+  },
+  "availability": {
+    "available": "Beschikbaar",
+    "unavailable": "Niet beschikbaar"
+  },
+  "hero": {
+    "eyebrow": "Freelance Virtueel Assistent",
+    "headline": "Meer tijd voor\nwat echt telt",
+    "subheadline": "Ik ondersteun IT-bedrijven en startups met administratie, projectbeheer en klantenservice — zodat u zich kunt focussen op groei.",
+    "ctaPrimary": "Bekijk mijn diensten",
+    "ctaSecondary": "Neem contact op",
+    "scrollHint": "Ontdek meer"
+  },
+  "services": {
+    "heading": "Mijn diensten",
+    "subheading": "Professionele ondersteuning afgestemd op uw behoeften",
+    "viewAll": "Alle diensten bekijken",
+    "learnMore": "Meer informatie",
+    "fromPrice": "Vanaf",
+    "featuredHeading": "Populaire diensten",
+    "featuredSubheading": "De meest gevraagde diensten door mijn klanten"
+  },
+  "process": {
+    "heading": "Hoe werkt het?",
+    "subheading": "Van kennismaking tot samenwerking — snel en zonder gedoe",
+    "steps": [
+      {
+        "title": "Kennismakingsgesprek",
+        "description": "We bespreken uw situatie, behoeften en doelen in een gratis gesprek van 30 minuten."
+      },
+      {
+        "title": "Voorstel op maat",
+        "description": "U ontvangt binnen 48 uur een helder voorstel met scope, aanpak en tarief."
+      },
+      {
+        "title": "Vliegende start",
+        "description": "Na akkoord start ik direct. Geen lange inwerkperiode — ik ben snel ingewerkt."
+      },
+      {
+        "title": "Continue samenwerking",
+        "description": "Wekelijkse updates, transparante communicatie en altijd bereikbaar via uw voorkeurskanaal."
+      }
+    ]
+  },
+  "whyMe": {
+    "heading": "Waarom Techvast?",
+    "subheading": "Niet zomaar een assistent — een partner die uw taal spreekt",
+    "points": [
+      {
+        "title": "IT-ervaring",
+        "description": "Ik ken de wereld van software, SaaS en digitale producten. Geen uitleg nodig."
+      },
+      {
+        "title": "Meertalig",
+        "description": "Vloeiend in Nederlands, Engels en Duits. Ik communiceer met uw internationale klanten."
+      },
+      {
+        "title": "Flexibel",
+        "description": "Geen vaste contracten of lange verplichtingen. Schaal op of af naar behoefte."
+      },
+      {
+        "title": "Vertrouwelijk",
+        "description": "Volledige discretie gegarandeerd. NDA beschikbaar op verzoek."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Klaar om tijd terug te winnen?",
+    "subheading": "Plan een gratis kennismakingsgesprek. Geen verplichtingen, wel concrete antwoorden.",
+    "button": "Neem contact op"
+  },
+  "about": {
+    "eyebrow": "Over mij",
+    "heading": "Hallo, ik ben Lennard",
+    "intro": "Virtueel assistent met een achtergrond in IT",
+    "bio": "Na jarenlang te hebben gewerkt als managementassistente bij tech-bedrijven in Amsterdam en Rotterdam, besloot ik in 2023 voor mezelf te beginnen. Ik combineer mijn administratieve expertise met diepgaande kennis van de IT-sector om ondernemers écht te helpen.\n\nMijn klanten zijn veelal groeiende SaaS-bedrijven, digitale bureaus en IT-freelancers die een betrouwbare partner zoeken — iemand die snel begrijpt hoe hun bedrijf werkt en direct waarde toevoegt.",
+    "stats": [
+      { "value": "5+", "label": "jaar ervaring" },
+      { "value": "30+", "label": "tevreden klanten" },
+      { "value": "3", "label": "talen" },
+      { "value": "100%", "label": "remote" }
+    ],
+    "skills": {
+      "heading": "Tooling & expertise",
+      "list": [
+        "Google Workspace",
+        "Microsoft 365",
+        "Notion",
+        "Jira & Confluence",
+        "Asana & Trello",
+        "HubSpot CRM",
+        "Intercom",
+        "Slack & Teams",
+        "Canva",
+        "Zapier"
+      ]
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Laten we kennismaken",
+    "subheading": "Vul het formulier in en ik neem binnen één werkdag contact met u op.",
+    "unavailableHeading": "Momenteel niet beschikbaar",
+    "unavailableText": "Ik neem op dit moment geen nieuwe klanten aan. Stuur me een e-mail als u op de wachtlijst wilt.",
+    "form": {
+      "name": "Naam",
+      "namePlaceholder": "Jan de Vries",
+      "email": "E-mailadres",
+      "emailPlaceholder": "jan@bedrijf.nl",
+      "company": "Bedrijfsnaam",
+      "companyPlaceholder": "Optioneel",
+      "message": "Bericht",
+      "messagePlaceholder": "Vertel me over uw situatie en wat u zoekt...",
+      "submit": "Verstuur bericht",
+      "submitting": "Verzenden...",
+      "successHeading": "Bericht ontvangen!",
+      "successText": "Dank u wel. Ik neem binnen één werkdag contact met u op.",
+      "errorText": "Er is iets misgegaan. Probeer het opnieuw of stuur een e-mail."
+    }
+  },
+  "footer": {
+    "tagline": "Professionele VA-diensten voor IT-bedrijven en startups.",
+    "links": {
+      "services": "Diensten",
+      "about": "Over mij",
+      "contact": "Contact",
+      "privacy": "Privacybeleid"
+    },
+    "rights": "Alle rechten voorbehouden."
+  },
+  "seo": {
+    "home": {
+      "title": "Techvast — Freelance Virtueel Assistent voor IT-bedrijven",
+      "description": "Professionele VA-diensten voor IT-bedrijven en startups: administratie, projectbeheer, klantenservice en meer. Meertalig, flexibel en direct inzetbaar."
+    },
+    "services": {
+      "title": "Diensten — Techvast",
+      "description": "Ontdek mijn VA-diensten: administratieve ondersteuning, projectbeheer, klantenservice, research en social media. Afgestemd op IT-bedrijven en startups."
+    },
+    "about": {
+      "title": "Over mij — Techvast",
+      "description": "Leer mij kennen: freelance virtueel assistent met 5+ jaar ervaring in IT-omgevingen. Meertalig, betrouwbaar en altijd bereikbaar."
+    },
+    "contact": {
+      "title": "Contact — Techvast",
+      "description": "Neem contact op voor een gratis kennismakingsgesprek. Ik help u graag verder."
+    }
+  }
+}

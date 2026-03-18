@@ -1,15 +1,129 @@
 ---
 import "@/styles/global.css"
+import Navigation from "@/components/layout/Navigation.astro"
+import Footer from "@/components/layout/Footer.astro"
+import { useTranslations, type Locale } from "@/i18n/utils"
+import { getCollection } from "astro:content"
+
+interface Props {
+  title?: string
+  description?: string
+  image?: string
+  noindex?: boolean
+  /** Pass the translated title/description keys from seo.* */
+  seoKey?: "home" | "services" | "about" | "contact"
+}
+
+const locale = (Astro.currentLocale ?? "nl") as Locale
+const t = useTranslations(locale)
+
+const { title, description, image, noindex = false, seoKey } = Astro.props
+
+const resolvedTitle = title ?? (seoKey ? t.seo[seoKey].title : "Techvast")
+const resolvedDesc =
+  description ?? (seoKey ? t.seo[seoKey].description : t.seo.home.description)
+
+const siteUrl = "https://techvast.nl"
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl).toString()
+const ogImage = image ?? `${siteUrl}/og-default.png`
+
+// Alternate hreflang URLs for SEO
+const path = Astro.url.pathname
+const stripLocale = (p: string) =>
+  p.replace(/^\/(en|de)\//, "/").replace(/^\/(en|de)$/, "/")
+const cleanPath = stripLocale(path)
+
+const alternates = [
+  { hreflang: "nl", href: `${siteUrl}${cleanPath}` },
+  {
+    hreflang: "en",
+    href: `${siteUrl}/en${cleanPath === "/" ? "" : cleanPath}`,
+  },
+  {
+    hreflang: "de",
+    href: `${siteUrl}/de${cleanPath === "/" ? "" : cleanPath}`,
+  },
+  { hreflang: "x-default", href: `${siteUrl}${cleanPath}` },
+]
+
+// Availability for nav
+const [availData] = await getCollection("availability")
+const isAvailable = availData?.data?.available ?? true
+
+// JSON-LD structured data
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Techvast",
+  description: resolvedDesc,
+  url: siteUrl,
+  telephone: "",
+  email: "hello@techvast.nl",
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "NL",
+  },
+  sameAs: ["https://linkedin.com/in/techvast"],
+  priceRange: "€€",
+}
 ---
 
-<html lang="en">
+<html lang={locale} class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Primary SEO -->
+    <title>{resolvedTitle}</title>
+    <meta name="description" content={resolvedDesc} />
+    <link rel="canonical" href={canonicalUrl} />
+    {noindex && <meta name="robots" content="noindex,nofollow" />}
+
+    <!-- Hreflang alternates -->
+    {
+      alternates.map((a) => (
+        <link rel="alternate" hreflang={a.hreflang} href={a.href} />
+      ))
+    }
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={resolvedTitle} />
+    <meta property="og:description" content={resolvedDesc} />
+    <meta property="og:image" content={ogImage} />
+    <meta
+      property="og:locale"
+      content={locale === "nl" ? "nl_NL" : locale === "de" ? "de_DE" : "en_GB"}
+    />
+    <meta property="og:site_name" content="Techvast" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={resolvedTitle} />
+    <meta name="twitter:description" content={resolvedDesc} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>Astro App</title>
+
+    <!-- Fonts: Syne (heading) + Outfit (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </head>
-  <body>
-    <slot />
+  <body class="flex min-h-screen flex-col">
+    <Navigation locale={locale} isAvailable={isAvailable} />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <Footer locale={locale} />
   </body>
 </html>

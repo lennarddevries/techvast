@@ -1,0 +1,140 @@
+---
+import { getCollection } from "astro:content"
+import Layout from "@/layouts/main.astro"
+import ContactForm from "@/components/ContactForm.astro"
+import { useTranslations, type Locale } from "@/i18n/utils"
+
+const locale = (Astro.currentLocale ?? "nl") as Locale
+const t = useTranslations(locale)
+const c = t.contact
+
+const [availData] = await getCollection("availability")
+const isAvailable = availData?.data?.available ?? true
+---
+
+<Layout seoKey="contact" noindex={!isAvailable}>
+  <!-- Header -->
+  <section class="relative overflow-hidden px-6 pt-24 pb-16">
+    <!-- Left accent stripe -->
+    <div
+      class="pointer-events-none absolute top-0 bottom-0 left-0 w-1 bg-accent"
+      aria-hidden="true"
+    >
+    </div>
+
+    <div class="mx-auto max-w-6xl">
+      <span
+        class="mb-5 inline-flex items-center gap-2 text-xs font-bold tracking-[0.18em] text-muted-foreground uppercase"
+      >
+        <span class="inline-block h-px w-5 bg-accent"></span>
+        {c.eyebrow}
+      </span>
+      <h1
+        class="font-heading text-5xl leading-[0.92] font-bold tracking-tight text-foreground md:text-7xl"
+      >
+        {c.heading}
+      </h1>
+      <!-- Structural divider -->
+      <div class="mt-10 flex items-center gap-0">
+        <span class="h-[3px] w-14 shrink-0 bg-accent"></span>
+        <span class="h-px flex-1 bg-foreground/12"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-6 pb-28">
+    <div class="mx-auto max-w-6xl">
+      {
+        isAvailable ? (
+          <div class="grid gap-14 lg:grid-cols-5">
+            <div class="lg:col-span-3">
+              <p class="mb-10 text-base leading-relaxed text-muted-foreground">
+                {c.subheading}
+              </p>
+              <ContactForm t={c.form} locale={locale} />
+            </div>
+
+            <aside class="flex flex-col gap-5 lg:col-span-2">
+              <div class="border border-foreground/12 bg-card p-7 transition-colors hover:border-accent/40">
+                <p class="mb-1 text-xs font-bold tracking-wider text-accent uppercase">
+                  E-mail
+                </p>
+                <h2 class="mb-3 font-heading text-xl font-bold text-foreground">
+                  hello@techvast.nl
+                </h2>
+                <p class="text-sm leading-relaxed text-muted-foreground">
+                  Stuur ook gerust een directe e-mail. Ik reageer binnen één
+                  werkdag.
+                </p>
+              </div>
+
+              <div class="border border-foreground/12 bg-card p-7 transition-colors hover:border-accent/40">
+                <p class="mb-1 text-xs font-bold tracking-wider text-accent uppercase">
+                  LinkedIn
+                </p>
+                <h2 class="mb-3 font-heading text-xl font-bold text-foreground">
+                  linkedin.com/in/techvast
+                </h2>
+                <a
+                  href="https://linkedin.com/in/techvast"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 text-xs font-bold tracking-wider text-foreground uppercase transition-colors hover:text-accent"
+                >
+                  Profiel bekijken
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </aside>
+          </div>
+        ) : (
+          <div class="max-w-xl border border-foreground/12 bg-card p-10">
+            <div class="mb-6 flex h-12 w-12 items-center justify-center bg-muted">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.75"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="text-muted-foreground"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="m4.9 4.9 14.2 14.2" />
+              </svg>
+            </div>
+            <h2 class="mb-3 font-heading text-2xl font-bold text-foreground">
+              {c.unavailableHeading}
+            </h2>
+            <p class="text-sm leading-relaxed text-muted-foreground">
+              {c.unavailableText}
+            </p>
+            <a
+              href="mailto:hello@techvast.nl"
+              class="mt-8 inline-flex h-10 items-center border-2 border-foreground/20 px-5 text-xs font-bold tracking-wider text-foreground uppercase transition-colors hover:border-foreground"
+            >
+              hello@techvast.nl
+            </a>
+          </div>
+        )
+      }
+    </div>
+  </section>
+</Layout>
