@@ -2,7 +2,6 @@
 import { getCollection } from "astro:content"
 import Layout from "@/layouts/main.astro"
 import ServiceCard from "@/components/ServiceCard.astro"
-import AvailabilityBadge from "@/components/AvailabilityBadge.astro"
 import { useTranslations, type Locale } from "@/i18n/utils"
 
 const locale = (Astro.currentLocale ?? "nl") as Locale
@@ -51,7 +50,6 @@ const featuredServices = allServices
           <span class="inline-block h-px w-5 bg-accent"></span>
           {t.hero.eyebrow}
         </span>
-        <AvailabilityBadge {isAvailable} locale={locale} />
       </div>
 
       <!-- Headline: massive, tight, structural -->
