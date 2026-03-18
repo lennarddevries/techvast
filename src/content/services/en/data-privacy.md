@@ -8,7 +8,7 @@ order: 13
 targetAudience: "All businesses"
 longDescription: "Ensure your company complies with privacy legislation. We offer practical support in setting up a secure data environment and GDPR compliance."
 serviceId: "data-privacy"
-price: "From € 65 / hour"
+price: "From € 00 / hour"
 ---
 
 ### What it is

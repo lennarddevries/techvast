@@ -3,12 +3,12 @@ title: "Werkplekinrichting & Onboarding"
 description: "Zorgeloze IT onboarding en werkplekinrichting voor nieuwe medewerkers."
 tagline: "Een vliegende start voor je nieuwe teamleden."
 icon: "laptop"
-featured: false
+featured: true
 order: 10
 targetAudience: "Groeiende bedrijven"
 longDescription: "Zorg dat nieuwe medewerkers vanaf dag één productief zijn. Wij regelen de hardware, accounts, software en een soepele IT onboarding."
 serviceId: "workspace-onboarding"
-price: "Vanaf € 55 / werkplek"
+price: "Vanaf € 00 / werkplek"
 ---
 
 ### Wat het is

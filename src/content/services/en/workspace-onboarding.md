@@ -8,7 +8,7 @@ order: 10
 targetAudience: "Growing businesses"
 longDescription: "Ensure new employees are productive from day one. We arrange the hardware, accounts, software and a smooth IT onboarding."
 serviceId: "workspace-onboarding"
-price: "From € 55 / workspace"
+price: "From € 00 / workspace"
 ---
 
 ### What it is

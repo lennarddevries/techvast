@@ -8,7 +8,7 @@ order: 14
 targetAudience: "Moderne Organisationen"
 longDescription: "Das Angebot an Cloud-Software ist riesig. Wir beraten unabhängig zu den besten SaaS-Lösungen für deine spezifischen Geschäftsanforderungen und helfen bei der Migration."
 serviceId: "cloud-saas-advice"
-price: "Ab € 65 / Stunde"
+price: "Ab € 00 / Stunde"
 ---
 
 ### Was es ist

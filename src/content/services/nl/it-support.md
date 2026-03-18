@@ -3,12 +3,12 @@ title: "IT Support & Helpdesk"
 description: "Snelle en vakkundige IT support voor al je medewerkers."
 tagline: "Snel weer aan het werk bij problemen."
 icon: "headphones"
-featured: true
+featured: false
 order: 15
 targetAudience: "Alle bedrijven"
 longDescription: "Problemen met de mail, een trage computer of vergeten wachtwoorden? Onze vriendelijke helpdesk lost problemen snel op, zodat jouw team direct verder kan."
 serviceId: "it-support"
-price: "Vanaf € 55 / uur"
+price: "Vanaf € 00 / uur"
 ---
 
 ### Wat het is

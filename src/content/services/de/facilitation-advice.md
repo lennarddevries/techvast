@@ -8,7 +8,7 @@ order: 17
 targetAudience: "Vorstand und Management"
 longDescription: "In welche Richtung soll die IT deines Unternehmens gehen? Wir moderieren strategische Sitzungen und bieten unabhängige Beratung, um die richtigen Entscheidungen für die Zukunft zu treffen."
 serviceId: "facilitation-advice"
-price: "Ab € 70 / Stunde"
+price: "Ab € 00 / Stunde"
 ---
 
 ### Was es ist

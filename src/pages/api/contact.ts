@@ -2,7 +2,7 @@ import type { APIRoute } from "astro"
 import { env } from "cloudflare:workers"
 import { Resend } from "resend"
 
-const TO_EMAIL = "hello@techvast.nl"
+const TO_EMAIL = "info@techvast.nl"
 const FROM_EMAIL = "Techvast <noreply@techvast.nl>"
 
 /** Plain-text fallback for the notification email sent to Lennard */
@@ -205,7 +205,7 @@ function buildConfirmationHtml(name: string, locale: string): string {
             </table>
             <p style="margin:0 0 4px;font-size:14px;color:#3f3f46;">${s.closing}</p>
             <p style="margin:0;font-size:14px;font-weight:600;color:#1a1a2e;">Lennard</p>
-            <p style="margin:4px 0 0;font-size:12px;color:#a1a1aa;">Techvast · <a href="mailto:hello@techvast.nl" style="color:#a1a1aa;">hello@techvast.nl</a></p>
+            <p style="margin:4px 0 0;font-size:12px;color:#a1a1aa;">Techvast · <a href="mailto:info@techvast.nl" style="color:#a1a1aa;">info@techvast.nl</a></p>
           </td>
         </tr>
         <!-- Footer -->
@@ -227,15 +227,15 @@ function buildConfirmationText(name: string, locale: string): string {
   const strings: Record<string, { greeting: string; body: string }> = {
     nl: {
       greeting: `Hallo ${name},`,
-      body: "Bedankt voor uw bericht. Ik neem binnen één werkdag contact met u op.\n\nMet vriendelijke groet,\nLennard\nhello@techvast.nl",
+      body: "Bedankt voor uw bericht. Ik neem binnen één werkdag contact met u op.\n\nMet vriendelijke groet,\nLennard\ninfo@techvast.nl",
     },
     en: {
       greeting: `Hi ${name},`,
-      body: "Thank you for reaching out. I'll get back to you within one business day.\n\nKind regards,\nLennard\nhello@techvast.nl",
+      body: "Thank you for reaching out. I'll get back to you within one business day.\n\nKind regards,\nLennard\ninfo@techvast.nl",
     },
     de: {
       greeting: `Hallo ${name},`,
-      body: "Vielen Dank für Ihre Nachricht. Ich melde mich innerhalb eines Werktages.\n\nMit freundlichen Grüßen,\nLennard\nhello@techvast.nl",
+      body: "Vielen Dank für Ihre Nachricht. Ich melde mich innerhalb eines Werktages.\n\nMit freundlichen Grüßen,\nLennard\ninfo@techvast.nl",
     },
   }
   const s = strings[locale] ?? strings.nl

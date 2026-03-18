@@ -8,7 +8,7 @@ order: 13
 targetAudience: "Alle Unternehmen"
 longDescription: "Stelle sicher, dass dein Unternehmen den Datenschutzgesetzen entspricht. Wir bieten praktische Unterstützung beim Aufbau einer sicheren Datenumgebung und bei der DSGVO-Konformität."
 serviceId: "data-privacy"
-price: "Ab € 65 / Stunde"
+price: "Ab € 00 / Stunde"
 ---
 
 ### Was es ist

@@ -8,7 +8,7 @@ order: 16
 targetAudience: "Teams und Mitarbeiter"
 longDescription: "Eine neue Anwendung ist nur dann erfolgreich, wenn Menschen damit arbeiten können. Wir bieten praktische Schulungen an, um die digitalen Fähigkeiten deines Teams zu verbessern."
 serviceId: "training-knowledge-transfer"
-price: "Ab € 250 / Sitzung"
+price: "Ab € 000 / Sitzung"
 ---
 
 ### Was es ist

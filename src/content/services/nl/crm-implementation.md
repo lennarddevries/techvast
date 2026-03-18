@@ -8,7 +8,7 @@ order: 6
 targetAudience: "Sales en marketing teams"
 longDescription: "Een goed CRM systeem is de motor van je bedrijf. Wij adviseren, implementeren en beheren CRM oplossingen die perfect aansluiten bij jouw sales en service processen."
 serviceId: "crm-implementation"
-price: "Vanaf € 65 / uur"
+price: "Vanaf € 00 / uur"
 ---
 
 ### Wat het is

@@ -8,7 +8,7 @@ order: 6
 targetAudience: "Sales and marketing teams"
 longDescription: "A good CRM system is the engine of your business. We advise, implement and manage CRM solutions that perfectly match your sales and service processes."
 serviceId: "crm-implementation"
-price: "From € 65 / hour"
+price: "From € 00 / hour"
 ---
 
 ### What it is

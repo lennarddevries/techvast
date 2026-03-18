@@ -8,7 +8,7 @@ order: 12
 targetAudience: "Entscheidungsträger und Manager"
 longDescription: "Zahle nicht zu viel für Software oder Hardware. Wir helfen bei der Auswahl der richtigen Lieferanten, verhandeln Verträge und verwalten die Beziehungen."
 serviceId: "it-procurement"
-price: "Ab € 65 / Stunde"
+price: "Ab € 00 / Stunde"
 ---
 
 ### Was es ist
