@@ -48,8 +48,8 @@ const TURNSTILE_SITEKEY =
           stroke-linejoin="round"
           aria-hidden="true"
         >
-          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-          <path d="m9 11 3 3L22 4"></path>
+          <path id="check-circle" d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <path id="check-mark" d="m9 11 3 3L22 4"></path>
         </svg>
       </span>
     </div>
@@ -278,8 +278,36 @@ const TURNSTILE_SITEKEY =
 
         if (res.ok) {
           this.form.classList.add("hidden")
+          this.successMessage.style.opacity = "0"
           this.successMessage.classList.remove("hidden")
+          this.successMessage.classList.add("animate-reveal-up")
           this.form.reset()
+
+          // Draw the checkmark paths
+          if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            const circle = this.successMessage.querySelector(
+              "#check-circle"
+            ) as SVGPathElement | null
+            const check = this.successMessage.querySelector(
+              "#check-mark"
+            ) as SVGPathElement | null
+            if (circle && check) {
+              const cLen = circle.getTotalLength()
+              const kLen = check.getTotalLength()
+              circle.style.strokeDasharray = `${cLen}`
+              circle.style.strokeDashoffset = `${cLen}`
+              circle.style.transition =
+                "stroke-dashoffset 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.35s"
+              check.style.strokeDasharray = `${kLen}`
+              check.style.strokeDashoffset = `${kLen}`
+              check.style.transition =
+                "stroke-dashoffset 0.35s cubic-bezier(0.16, 1, 0.3, 1) 0.85s"
+              requestAnimationFrame(() => {
+                circle.style.strokeDashoffset = "0"
+                check.style.strokeDashoffset = "0"
+              })
+            }
+          }
         } else {
           this.errorMessage.classList.remove("hidden")
           // @ts-expect-error - Turnstile is loaded via external script

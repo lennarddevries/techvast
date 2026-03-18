@@ -301,6 +301,7 @@ const navLinks = [
 </header>
 
 <script>
+  // Mobile menu toggle
   const btn = document.getElementById("mobile-menu-btn")
   const menu = document.getElementById("mobile-menu")
   const iconOpen = document.getElementById("icon-open")
@@ -313,4 +314,14 @@ const navLinks = [
     iconClose?.classList.toggle("hidden", isOpen)
     btn.setAttribute("aria-expanded", String(!isOpen))
   })
+
+  // Nav scroll elevation
+  ;(function () {
+    const header = document.querySelector("header")
+    if (!header) return
+    const update = () =>
+      header.classList.toggle("nav-elevated", window.scrollY > 60)
+    window.addEventListener("scroll", update, { passive: true })
+    update()
+  })()
 </script>

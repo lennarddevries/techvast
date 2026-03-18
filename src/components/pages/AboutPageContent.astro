@@ -23,25 +23,42 @@ const a = t.about
         <div class="flex-1">
           <span
             class="mb-5 inline-flex items-center gap-2 text-xs font-bold tracking-[0.18em] text-muted-foreground uppercase"
+            data-reveal
           >
             <span class="inline-block h-px w-5 bg-accent"></span>
             {a.eyebrow}
           </span>
           <h1
             class="font-heading text-5xl leading-[0.92] font-bold tracking-tight text-foreground md:text-7xl"
+            data-reveal
+            data-reveal-delay="80"
           >
             {a.heading}
           </h1>
           <!-- Structural divider -->
-          <div class="mt-8 flex items-center gap-0">
+          <div
+            class="mt-8 flex items-center gap-0"
+            data-reveal
+            data-reveal-delay="140"
+          >
             <span class="h-px w-14 shrink-0 bg-accent"></span>
             <span class="h-px flex-1 bg-foreground/12"></span>
           </div>
-          <p class="mt-6 text-lg font-medium text-accent">{a.intro}</p>
+          <p
+            class="mt-6 text-lg font-medium text-accent"
+            data-reveal
+            data-reveal-delay="180"
+          >
+            {a.intro}
+          </p>
         </div>
 
         <!-- Photo -->
-        <div class="relative w-full shrink-0 lg:w-64 xl:w-72">
+        <div
+          class="relative w-full shrink-0 lg:w-64 xl:w-72"
+          data-reveal
+          data-reveal-delay="200"
+        >
           <!-- Geometric offset accent frame -->
           <div
             class="pointer-events-none absolute -right-3 -bottom-3 h-full w-full border border-accent/50"
@@ -90,13 +107,15 @@ const a = t.about
       <!-- Bio -->
       <div class="space-y-5 lg:col-span-2">
         {
-          a.bio
-            .split("\n\n")
-            .map((para) => (
-              <p class="text-base leading-relaxed text-muted-foreground">
-                {para}
-              </p>
-            ))
+          a.bio.split("\n\n").map((para, i) => (
+            <p
+              class="text-base leading-relaxed text-muted-foreground"
+              data-reveal
+              data-reveal-delay={i * 80}
+            >
+              {para}
+            </p>
+          ))
         }
       </div>
 
@@ -109,8 +128,13 @@ const a = t.about
                 "flex flex-col gap-1 p-6",
                 i < a.stats.length - 1 ? "border-b border-border" : "",
               ]}
+              data-reveal
+              data-reveal-delay={i * 80}
             >
-              <p class="font-heading text-5xl font-bold text-accent">
+              <p
+                class="font-heading text-5xl font-bold text-accent"
+                data-counter={stat.value}
+              >
                 {stat.value}
               </p>
               <p class="text-xs font-semibold tracking-wider text-muted-foreground uppercase">
@@ -126,7 +150,7 @@ const a = t.about
   <!-- Skills -->
   <section class="border-y border-border bg-secondary/60 px-6 py-20">
     <div class="mx-auto max-w-6xl">
-      <div class="mb-4 flex items-center gap-5">
+      <div class="mb-4 flex items-center gap-5" data-reveal>
         <span class="h-px w-8 bg-accent"></span>
         <h2
           class="font-heading text-2xl font-bold tracking-tight text-foreground uppercase"
@@ -136,8 +160,12 @@ const a = t.about
       </div>
       <div class="mt-8 flex flex-wrap gap-2">
         {
-          a.skills.list.map((skill) => (
-            <span class="inline-flex items-center border border-foreground/15 bg-card px-3 py-1.5 text-sm font-medium text-foreground transition-colors hover:border-accent/50 hover:bg-accent/5">
+          a.skills.list.map((skill, i) => (
+            <span
+              class="inline-flex items-center border border-foreground/15 bg-card px-3 py-1.5 text-sm font-medium text-foreground transition-colors hover:border-accent/50 hover:bg-accent/5"
+              data-reveal
+              data-reveal-delay={i * 40}
+            >
               {skill}
             </span>
           ))
@@ -146,3 +174,43 @@ const a = t.about
     </div>
   </section>
 </Layout>
+
+<script>
+  // ─── Animated stat counters ───────────────────────────────────────────────
+  ;(function () {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return
+          const el = entry.target as HTMLElement
+          const raw = el.dataset.counter ?? ""
+          const match = raw.match(/^(\d+)(.*)$/)
+          if (!match) return
+
+          const target = parseInt(match[1])
+          const suffix = match[2]
+          const duration = 1400
+
+          let startTime: number | null = null
+          const tick = (timestamp: number) => {
+            if (!startTime) startTime = timestamp
+            const progress = Math.min((timestamp - startTime) / duration, 1)
+            // ease-out-quart
+            const eased = 1 - Math.pow(1 - progress, 4)
+            el.textContent = Math.round(eased * target) + suffix
+            if (progress < 1) requestAnimationFrame(tick)
+          }
+          requestAnimationFrame(tick)
+          observer.unobserve(el)
+        })
+      },
+      { threshold: 0.6 }
+    )
+
+    document
+      .querySelectorAll<HTMLElement>("[data-counter]")
+      .forEach((el) => observer.observe(el))
+  })()
+</script>

@@ -120,10 +120,65 @@ const jsonLd = {
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </head>
   <body class="flex min-h-screen flex-col">
+    <!-- Scroll progress bar -->
+    <div
+      id="scroll-progress"
+      aria-hidden="true"
+      style="position:fixed;top:0;left:0;height:2px;width:100%;background:var(--accent);z-index:200;pointer-events:none;transform:scaleX(0);transform-origin:left;will-change:transform;"
+    >
+    </div>
+
     <Navigation locale={locale} isAvailable={isAvailable} />
     <main class="flex-1">
       <slot />
     </main>
     <Footer locale={locale} />
+
+    <script>
+      // ─── Scroll progress bar ──────────────────────────────────────────────
+      ;(function () {
+        const bar = document.getElementById(
+          "scroll-progress"
+        ) as HTMLElement | null
+        if (!bar) return
+        const update = () => {
+          const total =
+            document.documentElement.scrollHeight - window.innerHeight
+          bar.style.transform =
+            total > 0 ? `scaleX(${window.scrollY / total})` : "scaleX(0)"
+        }
+        window.addEventListener("scroll", update, { passive: true })
+      })()
+
+      // ─── Scroll-reveal: observe [data-reveal] elements ───────────────────
+      ;(function () {
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          document
+            .querySelectorAll<HTMLElement>("[data-reveal]")
+            .forEach((el) => (el.style.opacity = "1"))
+          return
+        }
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return
+              const el = entry.target as HTMLElement
+              el.style.animationDelay = `${el.dataset.revealDelay ?? "0"}ms`
+              el.classList.add("animate-reveal-up")
+              observer.unobserve(el)
+            })
+          },
+          { threshold: 0.1, rootMargin: "0px 0px -32px 0px" }
+        )
+
+        document
+          .querySelectorAll<HTMLElement>("[data-reveal]")
+          .forEach((el) => {
+            el.style.opacity = "0"
+            observer.observe(el)
+          })
+      })()
+    </script>
   </body>
 </html>

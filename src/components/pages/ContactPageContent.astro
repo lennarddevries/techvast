@@ -25,18 +25,25 @@ const isAvailable = availData?.data?.available ?? true
     <div class="mx-auto max-w-6xl">
       <span
         class="mb-5 inline-flex items-center gap-2 text-xs font-bold tracking-[0.18em] text-muted-foreground uppercase"
+        data-reveal
       >
         <span class="inline-block h-px w-5 bg-accent"></span>
         {c.eyebrow}
       </span>
       <h1
         class="font-heading text-5xl leading-[0.92] font-bold tracking-tight text-foreground md:text-7xl"
+        data-reveal
+        data-reveal-delay="80"
       >
         {c.heading}
       </h1>
       <!-- Structural divider -->
-      <div class="mt-10 flex items-center gap-0">
-        <span class="h-[3px] w-14 shrink-0 bg-accent"></span>
+      <div
+        class="mt-10 flex items-center gap-0"
+        data-reveal
+        data-reveal-delay="140"
+      >
+        <span class="h-0.5 w-14 shrink-0 bg-accent"></span>
         <span class="h-px flex-1 bg-foreground/12"></span>
       </div>
     </div>
@@ -47,7 +54,7 @@ const isAvailable = availData?.data?.available ?? true
       {
         isAvailable ? (
           <div class="grid gap-14 lg:grid-cols-5">
-            <div class="lg:col-span-3">
+            <div class="lg:col-span-3" data-reveal>
               <p class="mb-10 text-base leading-relaxed text-muted-foreground">
                 {c.subheading}
               </p>
@@ -55,7 +62,11 @@ const isAvailable = availData?.data?.available ?? true
             </div>
 
             <aside class="flex flex-col gap-5 lg:col-span-2">
-              <div class="border border-foreground/12 bg-card p-7 transition-colors hover:border-accent/40">
+              <div
+                class="border border-foreground/12 bg-card p-7 transition-colors hover:border-accent/40"
+                data-reveal
+                data-reveal-delay="120"
+              >
                 <p class="mb-1 text-xs font-bold tracking-wider text-accent uppercase">
                   {c.emailLabel}
                 </p>
@@ -67,7 +78,11 @@ const isAvailable = availData?.data?.available ?? true
                 </p>
               </div>
 
-              <div class="border border-foreground/12 bg-card p-7 transition-colors hover:border-accent/40">
+              <div
+                class="border border-foreground/12 bg-card p-7 transition-colors hover:border-accent/40"
+                data-reveal
+                data-reveal-delay="200"
+              >
                 <p class="mb-1 text-xs font-bold tracking-wider text-accent uppercase">
                   {c.linkedInLabel}
                 </p>

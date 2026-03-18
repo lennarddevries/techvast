@@ -26,18 +26,25 @@ const services = allServices.sort((a, b) => a.data.order - b.data.order)
     <div class="mx-auto max-w-6xl">
       <span
         class="mb-5 inline-flex items-center gap-2 text-xs font-bold tracking-[0.18em] text-muted-foreground uppercase"
+        data-reveal
       >
         <span class="inline-block h-px w-5 bg-accent"></span>
         {t.services.heading}
       </span>
       <h1
         class="font-heading text-5xl leading-[0.92] font-bold tracking-tight text-foreground md:text-7xl"
+        data-reveal
+        data-reveal-delay="80"
       >
         {t.services.subheading}
       </h1>
       <!-- Structural divider -->
-      <div class="mt-10 flex items-center gap-0">
-        <span class="h-[3px] w-14 shrink-0 bg-accent"></span>
+      <div
+        class="mt-10 flex items-center gap-0"
+        data-reveal
+        data-reveal-delay="140"
+      >
+        <span class="h-0.5 w-14 shrink-0 bg-accent"></span>
         <span class="h-px flex-1 bg-foreground/12"></span>
       </div>
     </div>
@@ -48,7 +55,7 @@ const services = allServices.sort((a, b) => a.data.order - b.data.order)
     <div class="mx-auto max-w-6xl">
       <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {
-          services.map((service) => (
+          services.map((service, i) => (
             <ServiceCard
               title={service.data.title}
               tagline={service.data.tagline}
@@ -57,6 +64,7 @@ const services = allServices.sort((a, b) => a.data.order - b.data.order)
               price={service.data.price}
               serviceId={service.data.serviceId}
               locale={locale}
+              revealDelay={i * 60}
             />
           ))
         }

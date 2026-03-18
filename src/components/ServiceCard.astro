@@ -11,6 +11,8 @@ interface Props {
   locale: Locale
   /** Render as a featured/larger card */
   featured?: boolean
+  /** Stagger delay in ms for scroll-reveal animation */
+  revealDelay?: number
 }
 
 const {
@@ -22,6 +24,7 @@ const {
   serviceId,
   locale,
   featured = false,
+  revealDelay,
 } = Astro.props
 const t = useTranslations(locale)
 
@@ -52,6 +55,9 @@ const path = iconPaths[icon] ?? iconPaths.inbox
     featured ? "p-8" : "p-6",
   ]}
   aria-label={`${title} — ${t.services.learnMore}`}
+  {...revealDelay !== undefined
+    ? { "data-reveal": "", "data-reveal-delay": revealDelay }
+    : {}}
 >
   <!-- Top accent line that grows on hover -->
   <span
