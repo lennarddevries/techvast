@@ -53,7 +53,7 @@ jobs:
         run: bun run build
 
       - name: Deploy to Cloudflare Workers (prd)
-        run: bunx wrangler deploy --env prd
+        run: bunx wrangler deploy --config dist/server/wrangler.json --env prd
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -82,7 +82,7 @@ jobs:
         run: bun run build
 
       - name: Deploy to Cloudflare Workers (acc)
-        run: bunx wrangler deploy --env acc
+        run: bunx wrangler deploy --config dist/server/wrangler.json --env acc
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
