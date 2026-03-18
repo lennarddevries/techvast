@@ -22,10 +22,11 @@ interface Props {
 
 const { t, locale } = Astro.props
 
-// Cloudflare Turnstile sitekey — replace with your actual sitekey from the Cloudflare dashboard.
-// For local development use the test sitekey: "1x00000000000000000000AA"
-const TURNSTILE_SITEKEY =
-  import.meta.env.PUBLIC_TURNSTILE_SITEKEY ?? "1x00000000000000000000AA"
+// In dev (HTTP), Turnstile's HTTPS iframe can't communicate back to the parent page.
+// Use Cloudflare's always-pass test sitekey locally; the real key is injected at build time via CI.
+const TURNSTILE_SITEKEY = import.meta.env.DEV
+  ? "1x00000000000000000000AA"
+  : (import.meta.env.PUBLIC_TURNSTILE_SITEKEY ?? "1x00000000000000000000AA")
 ---
 
 <contact-form data-locale={locale} data-sitekey={TURNSTILE_SITEKEY}>
