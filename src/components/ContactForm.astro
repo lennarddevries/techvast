@@ -1,0 +1,354 @@
+---
+interface Props {
+  t: {
+    name: string
+    namePlaceholder: string
+    email: string
+    emailPlaceholder: string
+    company: string
+    companyPlaceholder: string
+    reasonLabel: string
+    reasonOptions: Record<string, string>
+    message: string
+    messagePlaceholder: string
+    submit: string
+    submitting: string
+    successHeading: string
+    successText: string
+    errorText: string
+  }
+  locale: string
+}
+
+const { t, locale } = Astro.props
+
+// Cloudflare Turnstile sitekey — replace with your actual sitekey from the Cloudflare dashboard.
+// For local development use the test sitekey: "1x00000000000000000000AA"
+const TURNSTILE_SITEKEY =
+  import.meta.env.PUBLIC_TURNSTILE_SITEKEY ?? "1x00000000000000000000AA"
+---
+
+<contact-form data-locale={locale} data-sitekey={TURNSTILE_SITEKEY}>
+  <!-- Success Message (hidden by default) -->
+  <div
+    id="success-message"
+    class="hidden rounded-xl border border-[oklch(0.62_0.17_155/0.3)] bg-[oklch(0.62_0.17_155/0.08)] p-8 text-center"
+  >
+    <div class="mb-3 flex justify-center">
+      <span
+        class="flex h-12 w-12 items-center justify-center rounded-full bg-[oklch(0.62_0.17_155/0.15)]"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="oklch(0.45 0.15 155)"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path id="check-circle" d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <path id="check-mark" d="m9 11 3 3L22 4"></path>
+        </svg>
+      </span>
+    </div>
+    <h3 class="mb-2 font-heading text-xl font-semibold text-foreground">
+      {t.successHeading}
+    </h3>
+    <p class="text-sm text-muted-foreground">{t.successText}</p>
+  </div>
+
+  <!-- The Form -->
+  <form id="contact-form" class="flex flex-col gap-5" novalidate>
+    <!-- Name -->
+    <div class="flex flex-col gap-1.5">
+      <label for="name" class="text-sm leading-none font-medium text-foreground"
+        >{t.name}</label
+      >
+      <input
+        id="name"
+        name="name"
+        type="text"
+        placeholder={t.namePlaceholder}
+        required
+        autocomplete="name"
+        class="flex h-9 w-full rounded-lg border border-input bg-transparent px-3 py-1 text-sm text-foreground shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground/60 focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+      />
+    </div>
+
+    <!-- Email -->
+    <div class="flex flex-col gap-1.5">
+      <label
+        for="email"
+        class="text-sm leading-none font-medium text-foreground"
+        >{t.email}</label
+      >
+      <input
+        id="email"
+        name="email"
+        type="email"
+        placeholder={t.emailPlaceholder}
+        required
+        autocomplete="email"
+        class="flex h-9 w-full rounded-lg border border-input bg-transparent px-3 py-1 text-sm text-foreground shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground/60 focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+      />
+    </div>
+
+    <!-- Company -->
+    <div class="flex flex-col gap-1.5">
+      <label
+        for="company"
+        class="text-sm leading-none font-medium text-foreground"
+        >{t.company}</label
+      >
+      <input
+        id="company"
+        name="company"
+        type="text"
+        placeholder={t.companyPlaceholder}
+        autocomplete="organization"
+        class="flex h-9 w-full rounded-lg border border-input bg-transparent px-3 py-1 text-sm text-foreground shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground/60 focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+      />
+    </div>
+
+    <!-- Reason Dropdown -->
+    <div class="flex flex-col gap-1.5">
+      <label
+        for="reason"
+        class="text-sm leading-none font-medium text-foreground"
+        >{t.reasonLabel}</label
+      >
+      <select
+        id="reason"
+        name="reason"
+        required
+        class="flex h-9 w-full rounded-lg border border-input bg-transparent px-3 py-1 text-sm text-foreground shadow-sm transition-colors focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 [&>option]:bg-background [&>option]:text-foreground"
+      >
+        <option value="" disabled selected hidden>Kies een optie...</option>
+        {
+          Object.entries(t.reasonOptions).map(([key, value]) => (
+            <option value={key}>{value}</option>
+          ))
+        }
+      </select>
+    </div>
+
+    <!-- Message -->
+    <div class="flex flex-col gap-1.5">
+      <label
+        for="message"
+        class="text-sm leading-none font-medium text-foreground"
+        >{t.message}</label
+      >
+      <textarea
+        id="message"
+        name="message"
+        placeholder={t.messagePlaceholder}
+        required
+        rows="5"
+        class="flex min-h-[120px] w-full resize-y rounded-lg border border-input bg-transparent px-3 py-2 text-sm text-foreground shadow-sm transition-colors placeholder:text-muted-foreground/60 focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+      ></textarea>
+    </div>
+
+    <!-- Turnstile widget -->
+    <div id="turnstile-container"></div>
+
+    <!-- Error message -->
+    <p id="error-message" class="hidden text-sm text-destructive">
+      {t.errorText}
+    </p>
+
+    <button
+      id="submit-button"
+      type="submit"
+      disabled
+      class="inline-flex h-11 w-full items-center justify-center gap-2 rounded-md bg-accent px-8 text-sm font-medium whitespace-nowrap text-accent-foreground shadow-sm transition-colors hover:bg-accent/85 focus-visible:ring-1 focus-visible:ring-ring focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50"
+      data-submit-text={t.submit}
+      data-submitting-text={t.submitting}
+    >
+      {t.submit}
+    </button>
+  </form>
+</contact-form>
+
+<script>
+  class ContactForm extends HTMLElement {
+    form: HTMLFormElement
+    successMessage: HTMLElement
+    errorMessage: HTMLElement
+    submitButton: HTMLButtonElement
+    turnstileContainer: HTMLElement
+    locale: string
+    sitekey: string
+    turnstileToken: string
+    widgetId: string
+    isSubmitting: boolean
+    submitText: string
+    submittingText: string
+
+    constructor() {
+      super()
+
+      this.form = this.querySelector("#contact-form") as HTMLFormElement
+      this.successMessage = this.querySelector(
+        "#success-message"
+      ) as HTMLElement
+      this.errorMessage = this.querySelector("#error-message") as HTMLElement
+      this.submitButton = this.querySelector(
+        "#submit-button"
+      ) as HTMLButtonElement
+      this.turnstileContainer = this.querySelector(
+        "#turnstile-container"
+      ) as HTMLElement
+
+      this.locale = this.dataset.locale || "en"
+      this.sitekey = this.dataset.sitekey || ""
+
+      this.turnstileToken = ""
+      this.widgetId = ""
+      this.isSubmitting = false
+
+      this.submitText = this.submitButton.dataset.submitText || "Submit"
+      this.submittingText =
+        this.submitButton.dataset.submittingText || "Submitting..."
+
+      this.initTurnstile()
+      this.form.addEventListener("submit", this.handleSubmit.bind(this))
+    }
+
+    initTurnstile() {
+      const scriptId = "cf-turnstile-script"
+      if (!document.getElementById(scriptId)) {
+        const script = document.createElement("script")
+        script.id = scriptId
+        script.src =
+          "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"
+        script.async = true
+        script.defer = true
+        document.body.appendChild(script)
+      }
+
+      const tryRender = () => {
+        // @ts-expect-error - Turnstile is loaded via external script
+        if (window.turnstile && this.turnstileContainer && !this.widgetId) {
+          // @ts-expect-error - Turnstile is loaded via external script
+          this.widgetId = window.turnstile.render(this.turnstileContainer, {
+            sitekey: this.sitekey,
+            callback: (token: string) => {
+              this.turnstileToken = token
+              this.updateButtonState()
+            },
+            "expired-callback": () => {
+              this.turnstileToken = ""
+              this.updateButtonState()
+            },
+            "error-callback": () => {
+              this.turnstileToken = ""
+              this.updateButtonState()
+            },
+            theme: "light",
+            size: "normal",
+          })
+        }
+      }
+
+      const interval = setInterval(() => {
+        // @ts-expect-error - Turnstile is loaded via external script
+        if (window.turnstile) {
+          clearInterval(interval)
+          tryRender()
+        }
+      }, 200)
+    }
+
+    updateButtonState() {
+      this.submitButton.disabled = this.isSubmitting || !this.turnstileToken
+      this.submitButton.textContent = this.isSubmitting
+        ? this.submittingText
+        : this.submitText
+    }
+
+    async handleSubmit(e: Event) {
+      e.preventDefault()
+
+      if (!this.turnstileToken || this.isSubmitting) return
+
+      this.isSubmitting = true
+      this.updateButtonState()
+      this.errorMessage.classList.add("hidden")
+
+      const data = {
+        name: (this.form.elements.namedItem("name") as HTMLInputElement).value,
+        email: (this.form.elements.namedItem("email") as HTMLInputElement)
+          .value,
+        company: (this.form.elements.namedItem("company") as HTMLInputElement)
+          .value,
+        reason: (this.form.elements.namedItem("reason") as HTMLSelectElement)
+          .value,
+        message: (
+          this.form.elements.namedItem("message") as HTMLTextAreaElement
+        ).value,
+        turnstileToken: this.turnstileToken,
+        locale: this.locale,
+      }
+
+      try {
+        const res = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        })
+
+        if (res.ok) {
+          this.form.classList.add("hidden")
+          this.successMessage.style.opacity = "0"
+          this.successMessage.classList.remove("hidden")
+          this.successMessage.classList.add("animate-reveal-up")
+          this.form.reset()
+
+          // Draw the checkmark paths
+          if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            const circle = this.successMessage.querySelector(
+              "#check-circle"
+            ) as SVGPathElement | null
+            const check = this.successMessage.querySelector(
+              "#check-mark"
+            ) as SVGPathElement | null
+            if (circle && check) {
+              const cLen = circle.getTotalLength()
+              const kLen = check.getTotalLength()
+              circle.style.strokeDasharray = `${cLen}`
+              circle.style.strokeDashoffset = `${cLen}`
+              circle.style.transition =
+                "stroke-dashoffset 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.35s"
+              check.style.strokeDasharray = `${kLen}`
+              check.style.strokeDashoffset = `${kLen}`
+              check.style.transition =
+                "stroke-dashoffset 0.35s cubic-bezier(0.16, 1, 0.3, 1) 0.85s"
+              requestAnimationFrame(() => {
+                circle.style.strokeDashoffset = "0"
+                check.style.strokeDashoffset = "0"
+              })
+            }
+          }
+        } else {
+          this.errorMessage.classList.remove("hidden")
+          // @ts-expect-error - Turnstile is loaded via external script
+          if (this.widgetId) window.turnstile?.reset(this.widgetId)
+        }
+      } catch {
+        this.errorMessage.classList.remove("hidden")
+        // @ts-expect-error - Turnstile is loaded via external script
+        if (this.widgetId) window.turnstile?.reset(this.widgetId)
+      } finally {
+        this.isSubmitting = false
+        this.updateButtonState()
+      }
+    }
+  }
+
+  customElements.define("contact-form", ContactForm)
+</script>

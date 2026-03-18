@@ -23,3 +23,5 @@ pnpm-debug.log*
 .idea/
 .husky/
 commitlint.config.js
+.agents
+skills-lock.json

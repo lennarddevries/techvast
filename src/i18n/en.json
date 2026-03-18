@@ -1,0 +1,174 @@
+{
+  "locale": "en",
+  "localeName": "English",
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About me",
+    "contact": "Contact",
+    "unavailableHint": "Currently unavailable for new projects"
+  },
+  "availability": {
+    "available": "Available",
+    "unavailable": "Unavailable"
+  },
+  "hero": {
+    "eyebrow": "Your technical grip",
+    "headline": "Your IT,\nwell organized,\nwithout hassle.",
+    "subheadline": "I help business owners with everything digital. From a broken website to a complete IT strategy, without the fuss.",
+    "ctaPrimary": "View services",
+    "ctaSecondary": "Request free IT Audit",
+    "scrollHint": "Discover more"
+  },
+  "services": {
+    "heading": "My services",
+    "subheading": "Professional support tailored to your needs",
+    "viewAll": "View all services",
+    "learnMore": "Learn more",
+    "fromPrice": "From",
+    "featuredHeading": "Featured services",
+    "featuredSubheading": "The most requested services by business owners"
+  },
+  "process": {
+    "heading": "How I work",
+    "subheading": "A simple and clear process with no surprises",
+    "steps": [
+      {
+        "title": "Meet & Greet",
+        "description": "Free discovery call or IT audit. We discuss your business, pain points, and goals. No obligations."
+      },
+      {
+        "title": "Plan",
+        "description": "You receive a clear proposal with scope, timeline, and pricing. No hidden costs or surprises."
+      },
+      {
+        "title": "Execute",
+        "description": "I get to work. You receive regular updates. No black boxes, you always know what is happening."
+      },
+      {
+        "title": "Deliver & Handover",
+        "description": "Clean handover including documentation. You own everything. No vendor lock-in."
+      },
+      {
+        "title": "Aftercare",
+        "description": "After delivery, I remain available for questions. Optional ongoing management if desired."
+      }
+    ]
+  },
+  "whyMe": {
+    "heading": "Why Techvast?",
+    "subheading": "Your technical grip, without the overhead of an employee",
+    "points": [
+      {
+        "title": "Developer background",
+        "description": "5+ years of experience building software. I truly understand technology, not just the surface level."
+      },
+      {
+        "title": "SME focus",
+        "description": "No enterprise jargon. I speak the language of entrepreneurs and look for practical, affordable solutions."
+      },
+      {
+        "title": "No overhead",
+        "description": "You don't pay for office space or management layers. Only for the hours that actually add value."
+      },
+      {
+        "title": "Fully transparent",
+        "description": "No long-term contracts required, transparent pricing, and clear communication about what I do and why."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Curious what I can do for your business?",
+    "subheading": "Schedule a free discovery call or request an IT Audit right away.",
+    "button": "Get in touch"
+  },
+  "about": {
+    "eyebrow": "About me",
+    "heading": "Hi, I'm Lennard",
+    "intro": "Fullstack developer now directly helping SME owners with IT challenges",
+    "bio": "After spending over 5 years building software at companies like SDB Group and Four Digits, I decided to focus my energy on helping business owners directly. I realized that many SMEs don't need a full-time developer, but someone who understands both technology and their business operations.\n\nMany businesses let IT problems pile up, offload them to the office manager, or pay top dollar at expensive agencies. Techvast fills that gap: one expert point of contact for everything digital. Alongside my technical background, I also have experience in theater and group facilitation, allowing me to explain complex matters clearly without the jargon.",
+    "stats": [
+      { "value": "5+", "label": "years IT experience" },
+      { "value": "100%", "label": "transparent" },
+      { "value": "3", "label": "languages" },
+      { "value": "0", "label": "vendor lock-ins" }
+    ],
+    "skills": {
+      "heading": "Tech stack & tooling",
+      "list": [
+        "Astro & Next.js",
+        "HTML, CSS & Vanilla JS",
+        "Python & FastAPI",
+        "Node.js",
+        "Zapier, Make & n8n",
+        "WordPress & Strapi",
+        "Google Workspace & M365",
+        "Docker & Linux",
+        "HubSpot CRM",
+        "Git & GitHub Actions"
+      ]
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Let's connect",
+    "subheading": "Whether you have a specific question, want to discuss a project, or just want to know what's possible: get in touch. The first consultation is always free.",
+    "unavailableHeading": "Currently unavailable",
+    "unavailableText": "I am not taking on new clients at the moment. Send me an email if you want to join the waitlist.",
+    "emailLabel": "Email",
+    "emailNote": "Feel free to send a direct email. I respond within one business day.",
+    "linkedInLabel": "LinkedIn",
+    "viewProfile": "View profile",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "John Doe",
+      "email": "Email address",
+      "emailPlaceholder": "john@company.com",
+      "company": "Company name",
+      "companyPlaceholder": "Optional",
+      "reasonLabel": "How can I help you?",
+      "reasonOptions": {
+        "audit": "Request free IT Audit",
+        "service": "Question about a service",
+        "quote": "Request a quote",
+        "intro": "Schedule a discovery call",
+        "other": "Other"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your situation and what you're looking for...",
+      "submit": "Send message",
+      "submitting": "Sending...",
+      "successHeading": "Message received!",
+      "successText": "Thank you. I will contact you within one business day.",
+      "errorText": "Something went wrong. Please try again or send an email."
+    }
+  },
+  "footer": {
+    "tagline": "Your technical grip. Flexible IT support for small businesses.",
+    "links": {
+      "services": "Services",
+      "about": "About me",
+      "contact": "Contact",
+      "privacy": "Privacy Policy"
+    },
+    "rights": "All rights reserved."
+  },
+  "seo": {
+    "home": {
+      "title": "Techvast — Your technical grip for IT problems",
+      "description": "I help SME owners with everything digital. From a broken website to workflow automation and workspace setup. Transparent and without the fuss."
+    },
+    "services": {
+      "title": "Services — Techvast",
+      "description": "Discover my IT services: from a free IT Audit and website development to system administration and CRM implementation. Practical solutions for SMEs."
+    },
+    "about": {
+      "title": "About me — Techvast",
+      "description": "Get to know Lennard: former fullstack developer with 5+ years of experience, now your freelance IT partner. I combine technology with insight into your business."
+    },
+    "contact": {
+      "title": "Contact — Techvast",
+      "description": "Get in touch for a free discovery call or request the free IT Audit. I'm ready to help you with your digital challenges."
+    }
+  }
+}

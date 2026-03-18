@@ -1,0 +1,174 @@
+{
+  "locale": "de",
+  "localeName": "Deutsch",
+  "nav": {
+    "home": "Startseite",
+    "services": "Dienstleistungen",
+    "about": "Über mich",
+    "contact": "Kontakt",
+    "unavailableHint": "Derzeit für neue Projekte nicht verfügbar"
+  },
+  "availability": {
+    "available": "Verfügbar",
+    "unavailable": "Nicht verfügbar"
+  },
+  "hero": {
+    "eyebrow": "Dein technischer Halt",
+    "headline": "Deine IT,\ngut organisiert,\nohne Stress.",
+    "subheadline": "Ich helfe Unternehmern bei allem, was digital ist. Von einer defekten Website bis hin zu einer kompletten IT-Strategie, ganz ohne Schnickschnack.",
+    "ctaPrimary": "Dienste ansehen",
+    "ctaSecondary": "Kostenloses IT-Audit anfordern",
+    "scrollHint": "Mehr entdecken"
+  },
+  "services": {
+    "heading": "Meine Dienstleistungen",
+    "subheading": "Professionelle Unterstützung, zugeschnitten auf deine Bedürfnisse",
+    "viewAll": "Alle Dienste ansehen",
+    "learnMore": "Mehr erfahren",
+    "fromPrice": "Ab",
+    "featuredHeading": "Beliebte Dienste",
+    "featuredSubheading": "Die am häufigsten nachgefragten Dienstleistungen"
+  },
+  "process": {
+    "heading": "Wie ich arbeite",
+    "subheading": "Ein einfacher und klarer Prozess ohne Überraschungen",
+    "steps": [
+      {
+        "title": "Kennenlernen",
+        "description": "Kostenloses Kennenlerngespräch oder IT-Audit. Wir besprechen dein Unternehmen, die Schmerzpunkte und Ziele. Unverbindlich."
+      },
+      {
+        "title": "Planen",
+        "description": "Du erhältst ein klares Angebot mit Umfang, Zeitplan und Preis. Keine versteckten Kosten oder Überraschungen."
+      },
+      {
+        "title": "Ausführen",
+        "description": "Ich mache mich an die Arbeit. Du erhältst regelmäßige Updates. Keine Blackboxen, du weißt immer, was passiert."
+      },
+      {
+        "title": "Liefern & Übergeben",
+        "description": "Saubere Übergabe inklusive Dokumentation. Dir gehört alles. Kein Vendor-Lock-in."
+      },
+      {
+        "title": "Nachsorge",
+        "description": "Nach der Lieferung bleibe ich für Fragen erreichbar. Optionales laufendes Management, falls gewünscht."
+      }
+    ]
+  },
+  "whyMe": {
+    "heading": "Warum Techvast?",
+    "subheading": "Dein technischer Halt, ohne den Overhead eines Mitarbeiters",
+    "points": [
+      {
+        "title": "Entwickler-Hintergrund",
+        "description": "5+ Jahre Erfahrung in der Softwareentwicklung. Ich verstehe Technologie wirklich, nicht nur oberflächlich."
+      },
+      {
+        "title": "Fokus auf KMU",
+        "description": "Kein Enterprise-Jargon. Ich spreche die Sprache von Unternehmern und suche nach praktischen, erschwinglichen Lösungen."
+      },
+      {
+        "title": "Kein Overhead",
+        "description": "Du zahlst nicht für Büroräume oder Managementebenen. Nur für die Stunden, die tatsächlich Wert schaffen."
+      },
+      {
+        "title": "Vollständig transparent",
+        "description": "Keine langfristigen Verträge erforderlich, transparente Preise und klare Kommunikation darüber, was ich tue und warum."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Neugierig, was ich für dein Unternehmen tun kann?",
+    "subheading": "Vereinbare ein kostenloses Kennenlerngespräch oder fordere direkt ein IT-Audit an.",
+    "button": "Kontakt aufnehmen"
+  },
+  "about": {
+    "eyebrow": "Über mich",
+    "heading": "Hallo, ich bin Lennard",
+    "intro": "Fullstack-Entwickler, der jetzt KMU-Inhabern direkt bei IT-Herausforderungen hilft",
+    "bio": "Nachdem ich über 5 Jahre lang Software bei Unternehmen wie der SDB Group und Four Digits entwickelt hatte, beschloss ich, meine Energie darauf zu konzentrieren, Unternehmern direkt zu helfen. Ich habe erkannt, dass viele KMUs keinen Vollzeit-Entwickler brauchen, sondern jemanden, der sowohl Technologie als auch ihre Geschäftsabläufe versteht.\n\nViele Unternehmen lassen IT-Probleme sich anhäufen, lagern sie an den Büromanager aus oder zahlen Höchstpreise bei teuren Agenturen. Techvast füllt diese Lücke: ein kompetenter Ansprechpartner für alles Digitale. Neben meinem technischen Hintergrund habe ich auch Erfahrung im Theater und in der Gruppenmoderation, wodurch ich komplexe Sachverhalte klar und ohne Fachjargon erklären kann.",
+    "stats": [
+      { "value": "5+", "label": "Jahre IT-Erfahrung" },
+      { "value": "100%", "label": "transparent" },
+      { "value": "3", "label": "Sprachen" },
+      { "value": "0", "label": "Knebelverträge" }
+    ],
+    "skills": {
+      "heading": "Tech-Stack & Tooling",
+      "list": [
+        "Astro & Next.js",
+        "HTML, CSS & Vanilla JS",
+        "Python & FastAPI",
+        "Node.js",
+        "Zapier, Make & n8n",
+        "WordPress & Strapi",
+        "Google Workspace & M365",
+        "Docker & Linux",
+        "HubSpot CRM",
+        "Git & GitHub Actions"
+      ]
+    }
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "heading": "Lass uns austauschen",
+    "subheading": "Egal ob du eine bestimmte Frage hast, ein Projekt besprechen möchtest oder einfach wissen willst, was möglich ist: melde dich. Das erste Gespräch ist immer kostenlos.",
+    "unavailableHeading": "Derzeit nicht verfügbar",
+    "unavailableText": "Ich nehme im Moment keine neuen Kunden an. Sende mir eine E-Mail, wenn du auf die Warteliste möchtest.",
+    "emailLabel": "E-Mail",
+    "emailNote": "Sende mir auch gerne eine direkte E-Mail. Ich antworte innerhalb eines Werktages.",
+    "linkedInLabel": "LinkedIn",
+    "viewProfile": "Profil ansehen",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Max Mustermann",
+      "email": "E-Mail-Adresse",
+      "emailPlaceholder": "max@firma.de",
+      "company": "Firmenname",
+      "companyPlaceholder": "Optional",
+      "reasonLabel": "Wie kann ich dir helfen?",
+      "reasonOptions": {
+        "audit": "Kostenloses IT-Audit anfordern",
+        "service": "Frage zu einer Dienstleistung",
+        "quote": "Angebot anfordern",
+        "intro": "Kennenlerngespräch planen",
+        "other": "Sonstiges"
+      },
+      "message": "Nachricht",
+      "messagePlaceholder": "Erzähle mir von deiner Situation und wonach du suchst...",
+      "submit": "Nachricht senden",
+      "submitting": "Wird gesendet...",
+      "successHeading": "Nachricht erhalten!",
+      "successText": "Vielen Dank. Ich werde mich innerhalb eines Werktages bei dir melden.",
+      "errorText": "Etwas ist schiefgelaufen. Bitte versuche es erneut oder sende eine E-Mail."
+    }
+  },
+  "footer": {
+    "tagline": "Dein technischer Halt. Flexibler IT-Support für kleine Unternehmen.",
+    "links": {
+      "services": "Dienstleistungen",
+      "about": "Über mich",
+      "contact": "Kontakt",
+      "privacy": "Datenschutzerklärung"
+    },
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "seo": {
+    "home": {
+      "title": "Techvast — Dein technischer Halt für IT-Probleme",
+      "description": "Ich helfe KMU-Inhabern bei allem, was digital ist. Von einer defekten Website bis hin zu Workflow-Automatisierung und Arbeitsplatzeinrichtung. Transparent und ohne Schnickschnack."
+    },
+    "services": {
+      "title": "Dienstleistungen — Techvast",
+      "description": "Entdecke meine IT-Dienstleistungen: von einem kostenlosen IT-Audit und Website-Entwicklung bis hin zu Systemadministration und CRM-Implementierung. Praktische Lösungen für KMUs."
+    },
+    "about": {
+      "title": "Über mich — Techvast",
+      "description": "Lerne Lennard kennen: ehemaliger Fullstack-Entwickler mit 5+ Jahren Erfahrung, jetzt dein freiberuflicher IT-Partner. Ich verbinde Technologie mit Einblick in dein Unternehmen."
+    },
+    "contact": {
+      "title": "Kontakt — Techvast",
+      "description": "Nimm Kontakt auf für ein kostenloses Kennenlerngespräch oder fordere das kostenlose IT-Audit an. Ich helfe dir gerne bei deinen digitalen Herausforderungen."
+    }
+  }
+}
