@@ -20,18 +20,18 @@ const label = isAvailable
   compact ? (
     <span
       class:list={[
-        "inline-flex items-center gap-1.5 rounded-full border px-2 py-0.5 text-[11px] font-medium",
+        "inline-flex items-center gap-1.5 border px-2 py-0.5 text-[10px] font-bold tracking-wider uppercase",
         isAvailable
-          ? "border-[oklch(0.62_0.17_155/0.3)] bg-[oklch(0.62_0.17_155/0.1)] text-[oklch(0.38_0.14_155)]"
+          ? "border-[oklch(0.62_0.17_155/0.35)] bg-[oklch(0.62_0.17_155/0.08)] text-[oklch(0.35_0.14_155)]"
           : "border-border bg-muted text-muted-foreground",
       ]}
       aria-label={label}
     >
       <span
         class:list={[
-          "size-1.5 rounded-full",
+          "size-1.5",
           isAvailable
-            ? "availability-dot bg-[oklch(0.55_0.17_155)]"
+            ? "availability-dot bg-[oklch(0.52_0.17_155)]"
             : "bg-muted-foreground/50",
         ]}
         aria-hidden="true"
@@ -41,17 +41,17 @@ const label = isAvailable
   ) : (
     <div
       class:list={[
-        "inline-flex items-center gap-2 rounded-full border px-3 py-1 text-sm font-medium",
+        "inline-flex items-center gap-2 border px-3 py-1 text-xs font-bold tracking-wider uppercase",
         isAvailable
-          ? "border-[oklch(0.62_0.17_155/0.3)] bg-[oklch(0.62_0.17_155/0.1)] text-[oklch(0.35_0.14_155)]"
+          ? "border-[oklch(0.62_0.17_155/0.35)] bg-[oklch(0.62_0.17_155/0.08)] text-[oklch(0.32_0.14_155)]"
           : "border-border bg-muted text-muted-foreground",
       ]}
     >
       <span
         class:list={[
-          "size-2 rounded-full",
+          "size-1.5",
           isAvailable
-            ? "availability-dot bg-[oklch(0.55_0.17_155)]"
+            ? "availability-dot bg-[oklch(0.52_0.17_155)]"
             : "bg-muted-foreground/50",
         ]}
         aria-hidden="true"
