@@ -18,7 +18,7 @@ export default [
     },
   },
   {
-    files: ["**/*.cjs"],
+    files: ["**/*.cjs", "release.config.js"],
     languageOptions: {
       globals: globals.node,
     },
