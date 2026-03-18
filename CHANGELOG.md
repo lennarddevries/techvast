@@ -1,3 +1,10 @@
+# [1.0.0-beta.3](https://github.com/lennarddevries/techvast/compare/v1.0.0-beta.2...v1.0.0-beta.3) (2026-03-18)
+
+
+### Features
+
+* add Lighthouse CI configuration and manual local script ([c8698b9](https://github.com/lennarddevries/techvast/commit/c8698b9e2177707ae196751de303f6de925945a9))
+
 # [1.0.0-alpha.3](https://github.com/lennarddevries/techvast/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2026-03-18)
 
 
